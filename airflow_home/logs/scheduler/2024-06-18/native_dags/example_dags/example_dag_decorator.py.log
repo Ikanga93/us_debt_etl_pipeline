@@ -79,3 +79,10 @@
 [2024-06-18T17:45:54.612-0400] {logging_mixin.py:188} INFO - [2024-06-18T17:45:54.612-0400] {dag.py:3096} INFO - Sync 1 DAGs
 [2024-06-18T17:45:54.626-0400] {logging_mixin.py:188} INFO - [2024-06-18T17:45:54.625-0400] {dag.py:3954} INFO - Setting next_dagrun for example_dag_decorator to None, run_after=None
 [2024-06-18T17:45:54.660-0400] {processor.py:183} INFO - Processing /Users/jbshome/Desktop/us_debt_etl_pipeline/debt_env/lib/python3.12/site-packages/airflow/example_dags/example_dag_decorator.py took 0.722 seconds
+[2024-06-18T17:54:14.557-0400] {processor.py:161} INFO - Started process (PID=28747) to work on /Users/jbshome/Desktop/us_debt_etl_pipeline/debt_env/lib/python3.12/site-packages/airflow/example_dags/example_dag_decorator.py
+[2024-06-18T17:54:14.559-0400] {processor.py:830} INFO - Processing file /Users/jbshome/Desktop/us_debt_etl_pipeline/debt_env/lib/python3.12/site-packages/airflow/example_dags/example_dag_decorator.py for tasks to queue
+[2024-06-18T17:54:14.560-0400] {logging_mixin.py:188} INFO - [2024-06-18T17:54:14.559-0400] {dagbag.py:545} INFO - Filling up the DagBag from /Users/jbshome/Desktop/us_debt_etl_pipeline/debt_env/lib/python3.12/site-packages/airflow/example_dags/example_dag_decorator.py
+[2024-06-18T17:54:14.827-0400] {processor.py:840} INFO - DAG(s) 'example_dag_decorator' retrieved from /Users/jbshome/Desktop/us_debt_etl_pipeline/debt_env/lib/python3.12/site-packages/airflow/example_dags/example_dag_decorator.py
+[2024-06-18T17:54:15.104-0400] {logging_mixin.py:188} INFO - [2024-06-18T17:54:15.104-0400] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-06-18T17:54:15.113-0400] {logging_mixin.py:188} INFO - [2024-06-18T17:54:15.113-0400] {dag.py:3954} INFO - Setting next_dagrun for example_dag_decorator to None, run_after=None
+[2024-06-18T17:54:15.134-0400] {processor.py:183} INFO - Processing /Users/jbshome/Desktop/us_debt_etl_pipeline/debt_env/lib/python3.12/site-packages/airflow/example_dags/example_dag_decorator.py took 0.580 seconds

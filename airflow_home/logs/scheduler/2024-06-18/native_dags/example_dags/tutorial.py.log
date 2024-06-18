@@ -142,3 +142,17 @@
 [2024-06-18T17:47:19.133-0400] {logging_mixin.py:188} INFO - [2024-06-18T17:47:19.133-0400] {dag.py:3096} INFO - Sync 1 DAGs
 [2024-06-18T17:47:19.156-0400] {logging_mixin.py:188} INFO - [2024-06-18T17:47:19.155-0400] {dag.py:3954} INFO - Setting next_dagrun for tutorial to 2024-06-17 00:00:00+00:00, run_after=2024-06-18 00:00:00+00:00
 [2024-06-18T17:47:19.182-0400] {processor.py:183} INFO - Processing /Users/jbshome/Desktop/us_debt_etl_pipeline/debt_env/lib/python3.12/site-packages/airflow/example_dags/tutorial.py took 0.307 seconds
+[2024-06-18T17:51:24.280-0400] {processor.py:161} INFO - Started process (PID=28059) to work on /Users/jbshome/Desktop/us_debt_etl_pipeline/debt_env/lib/python3.12/site-packages/airflow/example_dags/tutorial.py
+[2024-06-18T17:51:24.283-0400] {processor.py:830} INFO - Processing file /Users/jbshome/Desktop/us_debt_etl_pipeline/debt_env/lib/python3.12/site-packages/airflow/example_dags/tutorial.py for tasks to queue
+[2024-06-18T17:51:24.284-0400] {logging_mixin.py:188} INFO - [2024-06-18T17:51:24.284-0400] {dagbag.py:545} INFO - Filling up the DagBag from /Users/jbshome/Desktop/us_debt_etl_pipeline/debt_env/lib/python3.12/site-packages/airflow/example_dags/tutorial.py
+[2024-06-18T17:51:24.306-0400] {processor.py:840} INFO - DAG(s) 'tutorial' retrieved from /Users/jbshome/Desktop/us_debt_etl_pipeline/debt_env/lib/python3.12/site-packages/airflow/example_dags/tutorial.py
+[2024-06-18T17:51:24.586-0400] {logging_mixin.py:188} INFO - [2024-06-18T17:51:24.585-0400] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-06-18T17:51:24.622-0400] {logging_mixin.py:188} INFO - [2024-06-18T17:51:24.621-0400] {dag.py:3954} INFO - Setting next_dagrun for tutorial to 2024-06-17 00:00:00+00:00, run_after=2024-06-18 00:00:00+00:00
+[2024-06-18T17:51:24.663-0400] {processor.py:183} INFO - Processing /Users/jbshome/Desktop/us_debt_etl_pipeline/debt_env/lib/python3.12/site-packages/airflow/example_dags/tutorial.py took 0.391 seconds
+[2024-06-18T17:55:33.891-0400] {processor.py:161} INFO - Started process (PID=29029) to work on /Users/jbshome/Desktop/us_debt_etl_pipeline/debt_env/lib/python3.12/site-packages/airflow/example_dags/tutorial.py
+[2024-06-18T17:55:33.894-0400] {processor.py:830} INFO - Processing file /Users/jbshome/Desktop/us_debt_etl_pipeline/debt_env/lib/python3.12/site-packages/airflow/example_dags/tutorial.py for tasks to queue
+[2024-06-18T17:55:33.895-0400] {logging_mixin.py:188} INFO - [2024-06-18T17:55:33.895-0400] {dagbag.py:545} INFO - Filling up the DagBag from /Users/jbshome/Desktop/us_debt_etl_pipeline/debt_env/lib/python3.12/site-packages/airflow/example_dags/tutorial.py
+[2024-06-18T17:55:33.909-0400] {processor.py:840} INFO - DAG(s) 'tutorial' retrieved from /Users/jbshome/Desktop/us_debt_etl_pipeline/debt_env/lib/python3.12/site-packages/airflow/example_dags/tutorial.py
+[2024-06-18T17:55:34.093-0400] {logging_mixin.py:188} INFO - [2024-06-18T17:55:34.093-0400] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-06-18T17:55:34.125-0400] {logging_mixin.py:188} INFO - [2024-06-18T17:55:34.125-0400] {dag.py:3954} INFO - Setting next_dagrun for tutorial to 2024-06-17 00:00:00+00:00, run_after=2024-06-18 00:00:00+00:00
+[2024-06-18T17:55:34.166-0400] {processor.py:183} INFO - Processing /Users/jbshome/Desktop/us_debt_etl_pipeline/debt_env/lib/python3.12/site-packages/airflow/example_dags/tutorial.py took 0.280 seconds

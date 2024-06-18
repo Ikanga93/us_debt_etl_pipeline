@@ -218,3 +218,25 @@ ModuleNotFoundError: No module named 'kubernetes'
 [2024-06-18T17:49:26.762-0400] {logging_mixin.py:188} INFO - [2024-06-18T17:49:26.762-0400] {example_local_kubernetes_executor.py:41} WARNING - Install Kubernetes dependencies with: pip install apache-airflow[cncf.kubernetes]
 [2024-06-18T17:49:26.763-0400] {processor.py:842} WARNING - No viable dags retrieved from /Users/jbshome/Desktop/us_debt_etl_pipeline/debt_env/lib/python3.12/site-packages/airflow/example_dags/example_local_kubernetes_executor.py
 [2024-06-18T17:49:26.953-0400] {processor.py:183} INFO - Processing /Users/jbshome/Desktop/us_debt_etl_pipeline/debt_env/lib/python3.12/site-packages/airflow/example_dags/example_local_kubernetes_executor.py took 0.284 seconds
+[2024-06-18T17:53:49.813-0400] {processor.py:161} INFO - Started process (PID=28600) to work on /Users/jbshome/Desktop/us_debt_etl_pipeline/debt_env/lib/python3.12/site-packages/airflow/example_dags/example_local_kubernetes_executor.py
+[2024-06-18T17:53:49.816-0400] {processor.py:830} INFO - Processing file /Users/jbshome/Desktop/us_debt_etl_pipeline/debt_env/lib/python3.12/site-packages/airflow/example_dags/example_local_kubernetes_executor.py for tasks to queue
+[2024-06-18T17:53:49.817-0400] {logging_mixin.py:188} INFO - [2024-06-18T17:53:49.816-0400] {dagbag.py:545} INFO - Filling up the DagBag from /Users/jbshome/Desktop/us_debt_etl_pipeline/debt_env/lib/python3.12/site-packages/airflow/example_dags/example_local_kubernetes_executor.py
+[2024-06-18T17:53:49.933-0400] {logging_mixin.py:188} INFO - [2024-06-18T17:53:49.928-0400] {example_local_kubernetes_executor.py:40} WARNING - Could not import DAGs in example_local_kubernetes_executor.py
+Traceback (most recent call last):
+  File "/Users/jbshome/Desktop/us_debt_etl_pipeline/debt_env/lib/python3.12/site-packages/airflow/example_dags/example_local_kubernetes_executor.py", line 38, in <module>
+    from kubernetes.client import models as k8s
+ModuleNotFoundError: No module named 'kubernetes'
+[2024-06-18T17:53:49.935-0400] {logging_mixin.py:188} INFO - [2024-06-18T17:53:49.934-0400] {example_local_kubernetes_executor.py:41} WARNING - Install Kubernetes dependencies with: pip install apache-airflow[cncf.kubernetes]
+[2024-06-18T17:53:49.936-0400] {processor.py:842} WARNING - No viable dags retrieved from /Users/jbshome/Desktop/us_debt_etl_pipeline/debt_env/lib/python3.12/site-packages/airflow/example_dags/example_local_kubernetes_executor.py
+[2024-06-18T17:53:50.202-0400] {processor.py:183} INFO - Processing /Users/jbshome/Desktop/us_debt_etl_pipeline/debt_env/lib/python3.12/site-packages/airflow/example_dags/example_local_kubernetes_executor.py took 0.393 seconds
+[2024-06-18T17:57:25.449-0400] {processor.py:161} INFO - Started process (PID=29549) to work on /Users/jbshome/Desktop/us_debt_etl_pipeline/debt_env/lib/python3.12/site-packages/airflow/example_dags/example_local_kubernetes_executor.py
+[2024-06-18T17:57:25.452-0400] {processor.py:830} INFO - Processing file /Users/jbshome/Desktop/us_debt_etl_pipeline/debt_env/lib/python3.12/site-packages/airflow/example_dags/example_local_kubernetes_executor.py for tasks to queue
+[2024-06-18T17:57:25.453-0400] {logging_mixin.py:188} INFO - [2024-06-18T17:57:25.452-0400] {dagbag.py:545} INFO - Filling up the DagBag from /Users/jbshome/Desktop/us_debt_etl_pipeline/debt_env/lib/python3.12/site-packages/airflow/example_dags/example_local_kubernetes_executor.py
+[2024-06-18T17:57:25.529-0400] {logging_mixin.py:188} INFO - [2024-06-18T17:57:25.528-0400] {example_local_kubernetes_executor.py:40} WARNING - Could not import DAGs in example_local_kubernetes_executor.py
+Traceback (most recent call last):
+  File "/Users/jbshome/Desktop/us_debt_etl_pipeline/debt_env/lib/python3.12/site-packages/airflow/example_dags/example_local_kubernetes_executor.py", line 38, in <module>
+    from kubernetes.client import models as k8s
+ModuleNotFoundError: No module named 'kubernetes'
+[2024-06-18T17:57:25.529-0400] {logging_mixin.py:188} INFO - [2024-06-18T17:57:25.529-0400] {example_local_kubernetes_executor.py:41} WARNING - Install Kubernetes dependencies with: pip install apache-airflow[cncf.kubernetes]
+[2024-06-18T17:57:25.530-0400] {processor.py:842} WARNING - No viable dags retrieved from /Users/jbshome/Desktop/us_debt_etl_pipeline/debt_env/lib/python3.12/site-packages/airflow/example_dags/example_local_kubernetes_executor.py
+[2024-06-18T17:57:25.882-0400] {processor.py:183} INFO - Processing /Users/jbshome/Desktop/us_debt_etl_pipeline/debt_env/lib/python3.12/site-packages/airflow/example_dags/example_local_kubernetes_executor.py took 0.437 seconds

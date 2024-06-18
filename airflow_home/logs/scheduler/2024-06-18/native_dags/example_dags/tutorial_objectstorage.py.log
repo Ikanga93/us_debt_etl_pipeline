@@ -142,3 +142,17 @@
 [2024-06-18T17:47:07.113-0400] {logging_mixin.py:188} INFO - [2024-06-18T17:47:07.113-0400] {dag.py:3096} INFO - Sync 1 DAGs
 [2024-06-18T17:47:07.129-0400] {logging_mixin.py:188} INFO - [2024-06-18T17:47:07.129-0400] {dag.py:3954} INFO - Setting next_dagrun for tutorial_objectstorage to None, run_after=None
 [2024-06-18T17:47:07.158-0400] {processor.py:183} INFO - Processing /Users/jbshome/Desktop/us_debt_etl_pipeline/debt_env/lib/python3.12/site-packages/airflow/example_dags/tutorial_objectstorage.py took 0.468 seconds
+[2024-06-18T17:51:12.898-0400] {processor.py:161} INFO - Started process (PID=27969) to work on /Users/jbshome/Desktop/us_debt_etl_pipeline/debt_env/lib/python3.12/site-packages/airflow/example_dags/tutorial_objectstorage.py
+[2024-06-18T17:51:12.900-0400] {processor.py:830} INFO - Processing file /Users/jbshome/Desktop/us_debt_etl_pipeline/debt_env/lib/python3.12/site-packages/airflow/example_dags/tutorial_objectstorage.py for tasks to queue
+[2024-06-18T17:51:12.902-0400] {logging_mixin.py:188} INFO - [2024-06-18T17:51:12.901-0400] {dagbag.py:545} INFO - Filling up the DagBag from /Users/jbshome/Desktop/us_debt_etl_pipeline/debt_env/lib/python3.12/site-packages/airflow/example_dags/tutorial_objectstorage.py
+[2024-06-18T17:51:13.115-0400] {processor.py:840} INFO - DAG(s) 'tutorial_objectstorage' retrieved from /Users/jbshome/Desktop/us_debt_etl_pipeline/debt_env/lib/python3.12/site-packages/airflow/example_dags/tutorial_objectstorage.py
+[2024-06-18T17:51:13.450-0400] {logging_mixin.py:188} INFO - [2024-06-18T17:51:13.449-0400] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-06-18T17:51:13.464-0400] {logging_mixin.py:188} INFO - [2024-06-18T17:51:13.463-0400] {dag.py:3954} INFO - Setting next_dagrun for tutorial_objectstorage to None, run_after=None
+[2024-06-18T17:51:13.495-0400] {processor.py:183} INFO - Processing /Users/jbshome/Desktop/us_debt_etl_pipeline/debt_env/lib/python3.12/site-packages/airflow/example_dags/tutorial_objectstorage.py took 0.600 seconds
+[2024-06-18T17:55:25.012-0400] {processor.py:161} INFO - Started process (PID=29022) to work on /Users/jbshome/Desktop/us_debt_etl_pipeline/debt_env/lib/python3.12/site-packages/airflow/example_dags/tutorial_objectstorage.py
+[2024-06-18T17:55:25.014-0400] {processor.py:830} INFO - Processing file /Users/jbshome/Desktop/us_debt_etl_pipeline/debt_env/lib/python3.12/site-packages/airflow/example_dags/tutorial_objectstorage.py for tasks to queue
+[2024-06-18T17:55:25.015-0400] {logging_mixin.py:188} INFO - [2024-06-18T17:55:25.015-0400] {dagbag.py:545} INFO - Filling up the DagBag from /Users/jbshome/Desktop/us_debt_etl_pipeline/debt_env/lib/python3.12/site-packages/airflow/example_dags/tutorial_objectstorage.py
+[2024-06-18T17:55:25.157-0400] {processor.py:840} INFO - DAG(s) 'tutorial_objectstorage' retrieved from /Users/jbshome/Desktop/us_debt_etl_pipeline/debt_env/lib/python3.12/site-packages/airflow/example_dags/tutorial_objectstorage.py
+[2024-06-18T17:55:25.307-0400] {logging_mixin.py:188} INFO - [2024-06-18T17:55:25.306-0400] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-06-18T17:55:25.323-0400] {logging_mixin.py:188} INFO - [2024-06-18T17:55:25.323-0400] {dag.py:3954} INFO - Setting next_dagrun for tutorial_objectstorage to None, run_after=None
+[2024-06-18T17:55:25.356-0400] {processor.py:183} INFO - Processing /Users/jbshome/Desktop/us_debt_etl_pipeline/debt_env/lib/python3.12/site-packages/airflow/example_dags/tutorial_objectstorage.py took 0.348 seconds

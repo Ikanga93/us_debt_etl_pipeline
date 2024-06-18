@@ -387,3 +387,38 @@ Traceback (most recent call last):
 ModuleNotFoundError: No module named 'president_data'
 [2024-06-18T17:46:28.820-0400] {processor.py:842} WARNING - No viable dags retrieved from /Users/jbshome/Desktop/us_debt_etl_pipeline/airflow_home/dags/us_debt_by_president_dag.py
 [2024-06-18T17:46:28.940-0400] {processor.py:183} INFO - Processing /Users/jbshome/Desktop/us_debt_etl_pipeline/airflow_home/dags/us_debt_by_president_dag.py took 1.124 seconds
+[2024-06-18T17:50:31.545-0400] {processor.py:161} INFO - Started process (PID=27855) to work on /Users/jbshome/Desktop/us_debt_etl_pipeline/airflow_home/dags/us_debt_by_president_dag.py
+[2024-06-18T17:50:31.546-0400] {processor.py:830} INFO - Processing file /Users/jbshome/Desktop/us_debt_etl_pipeline/airflow_home/dags/us_debt_by_president_dag.py for tasks to queue
+[2024-06-18T17:50:31.548-0400] {logging_mixin.py:188} INFO - [2024-06-18T17:50:31.547-0400] {dagbag.py:545} INFO - Filling up the DagBag from /Users/jbshome/Desktop/us_debt_etl_pipeline/airflow_home/dags/us_debt_by_president_dag.py
+[2024-06-18T17:50:32.893-0400] {logging_mixin.py:188} WARNING - 2024-06-18 17:50:32,892 - cron_descriptor.GetText - DEBUG - /Users/jbshome/Desktop/us_debt_etl_pipeline/debt_env/lib/python3.12/site-packages/cron_descriptor/locale/en_US.mo Loaded
+[2024-06-18T17:50:32.899-0400] {logging_mixin.py:188} WARNING - 2024-06-18 17:50:32,899 - cron_descriptor.GetText - DEBUG - /Users/jbshome/Desktop/us_debt_etl_pipeline/debt_env/lib/python3.12/site-packages/cron_descriptor/locale/en_US.mo Loaded
+[2024-06-18T17:50:32.907-0400] {logging_mixin.py:188} WARNING - 2024-06-18 17:50:32,906 - airflow.models.dagbag.DagBag - DEBUG - Loaded DAG <DAG: us_debt_by_president_dag>
+[2024-06-18T17:50:32.907-0400] {processor.py:840} INFO - DAG(s) 'us_debt_by_president_dag' retrieved from /Users/jbshome/Desktop/us_debt_etl_pipeline/airflow_home/dags/us_debt_by_president_dag.py
+[2024-06-18T17:50:32.924-0400] {logging_mixin.py:188} WARNING - 2024-06-18 17:50:32,923 - airflow.models.dagbag.DagBag - DEBUG - Running dagbag.sync_to_db with retries. Try 1 of 3
+[2024-06-18T17:50:32.924-0400] {logging_mixin.py:188} WARNING - 2024-06-18 17:50:32,924 - airflow.models.dagbag.DagBag - DEBUG - Calling the DAG.bulk_sync_to_db method
+[2024-06-18T17:50:32.933-0400] {logging_mixin.py:188} WARNING - 2024-06-18 17:50:32,932 - airflow.models.serialized_dag - DEBUG - Checking if DAG (us_debt_by_president_dag) changed
+[2024-06-18T17:50:33.128-0400] {logging_mixin.py:188} WARNING - 2024-06-18 17:50:33,128 - airflow.models.serialized_dag - DEBUG - Writing Serialized DAG: us_debt_by_president_dag to the DB
+[2024-06-18T17:50:33.135-0400] {logging_mixin.py:188} WARNING - 2024-06-18 17:50:33,135 - airflow.models.serialized_dag - DEBUG - DAG: us_debt_by_president_dag written to the DB
+[2024-06-18T17:50:33.136-0400] {logging_mixin.py:188} WARNING - 2024-06-18 17:50:33,136 - airflow.models.dagbag.DagBag - DEBUG - Syncing DAG permissions: us_debt_by_president_dag to the DB
+[2024-06-18T17:50:33.369-0400] {logging_mixin.py:188} WARNING - 2024-06-18 17:50:33,368 - airflow.www.security_appless.ApplessAirflowSecurityManager - DEBUG - Not syncing DAG-level permissions for DAG 'DAG:us_debt_by_president_dag' as access control is unset.
+[2024-06-18T17:50:33.370-0400] {logging_mixin.py:188} WARNING - 2024-06-18 17:50:33,369 - airflow.models.dag - INFO - Sync 1 DAGs
+[2024-06-18T17:50:33.412-0400] {logging_mixin.py:188} WARNING - 2024-06-18 17:50:33,412 - airflow.models.dag - INFO - Setting next_dagrun for us_debt_by_president_dag to 2025-01-01 00:00:00+00:00, run_after=2026-01-01 00:00:00+00:00
+[2024-06-18T17:50:33.503-0400] {processor.py:183} INFO - Processing /Users/jbshome/Desktop/us_debt_etl_pipeline/airflow_home/dags/us_debt_by_president_dag.py took 1.963 seconds
+[2024-06-18T17:50:33.503-0400] {logging_mixin.py:188} WARNING - 2024-06-18 17:50:33,503 - airflow.settings - DEBUG - Disposing DB connection pool (PID 27855)
+[2024-06-18T17:50:33.504-0400] {logging_mixin.py:188} WARNING - 2024-06-18 17:50:33,504 - airflow.settings - DEBUG - Disposing DB connection pool (PID 27855)
+[2024-06-18T17:54:45.677-0400] {processor.py:161} INFO - Started process (PID=28985) to work on /Users/jbshome/Desktop/us_debt_etl_pipeline/airflow_home/dags/us_debt_by_president_dag.py
+[2024-06-18T17:54:45.679-0400] {processor.py:830} INFO - Processing file /Users/jbshome/Desktop/us_debt_etl_pipeline/airflow_home/dags/us_debt_by_president_dag.py for tasks to queue
+[2024-06-18T17:54:45.680-0400] {logging_mixin.py:188} INFO - [2024-06-18T17:54:45.679-0400] {dagbag.py:545} INFO - Filling up the DagBag from /Users/jbshome/Desktop/us_debt_etl_pipeline/airflow_home/dags/us_debt_by_president_dag.py
+[2024-06-18T17:54:46.613-0400] {logging_mixin.py:188} WARNING - 2024-06-18 17:54:46,612 - cron_descriptor.GetText - DEBUG - /Users/jbshome/Desktop/us_debt_etl_pipeline/debt_env/lib/python3.12/site-packages/cron_descriptor/locale/en_US.mo Loaded
+[2024-06-18T17:54:46.616-0400] {logging_mixin.py:188} WARNING - 2024-06-18 17:54:46,616 - cron_descriptor.GetText - DEBUG - /Users/jbshome/Desktop/us_debt_etl_pipeline/debt_env/lib/python3.12/site-packages/cron_descriptor/locale/en_US.mo Loaded
+[2024-06-18T17:54:46.623-0400] {logging_mixin.py:188} WARNING - 2024-06-18 17:54:46,622 - airflow.models.dagbag.DagBag - DEBUG - Loaded DAG <DAG: us_debt_by_president_dag>
+[2024-06-18T17:54:46.623-0400] {processor.py:840} INFO - DAG(s) 'us_debt_by_president_dag' retrieved from /Users/jbshome/Desktop/us_debt_etl_pipeline/airflow_home/dags/us_debt_by_president_dag.py
+[2024-06-18T17:54:46.636-0400] {logging_mixin.py:188} WARNING - 2024-06-18 17:54:46,636 - airflow.models.dagbag.DagBag - DEBUG - Running dagbag.sync_to_db with retries. Try 1 of 3
+[2024-06-18T17:54:46.637-0400] {logging_mixin.py:188} WARNING - 2024-06-18 17:54:46,637 - airflow.models.dagbag.DagBag - DEBUG - Calling the DAG.bulk_sync_to_db method
+[2024-06-18T17:54:46.644-0400] {logging_mixin.py:188} WARNING - 2024-06-18 17:54:46,644 - airflow.models.serialized_dag - DEBUG - Checking if DAG (us_debt_by_president_dag) changed
+[2024-06-18T17:54:46.794-0400] {logging_mixin.py:188} WARNING - 2024-06-18 17:54:46,793 - airflow.models.serialized_dag - DEBUG - Serialized DAG (us_debt_by_president_dag) is unchanged. Skipping writing to DB
+[2024-06-18T17:54:46.795-0400] {logging_mixin.py:188} WARNING - 2024-06-18 17:54:46,794 - airflow.models.dag - INFO - Sync 1 DAGs
+[2024-06-18T17:54:46.826-0400] {logging_mixin.py:188} WARNING - 2024-06-18 17:54:46,826 - airflow.models.dag - INFO - Setting next_dagrun for us_debt_by_president_dag to 2025-01-01 00:00:00+00:00, run_after=2026-01-01 00:00:00+00:00
+[2024-06-18T17:54:46.859-0400] {processor.py:183} INFO - Processing /Users/jbshome/Desktop/us_debt_etl_pipeline/airflow_home/dags/us_debt_by_president_dag.py took 1.187 seconds
+[2024-06-18T17:54:46.860-0400] {logging_mixin.py:188} WARNING - 2024-06-18 17:54:46,860 - airflow.settings - DEBUG - Disposing DB connection pool (PID 28985)
+[2024-06-18T17:54:46.862-0400] {logging_mixin.py:188} WARNING - 2024-06-18 17:54:46,861 - airflow.settings - DEBUG - Disposing DB connection pool (PID 28985)

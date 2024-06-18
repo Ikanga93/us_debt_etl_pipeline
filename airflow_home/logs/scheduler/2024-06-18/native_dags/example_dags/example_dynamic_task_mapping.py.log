@@ -100,3 +100,10 @@
 [2024-06-18T17:45:41.290-0400] {logging_mixin.py:188} INFO - [2024-06-18T17:45:41.289-0400] {dag.py:3096} INFO - Sync 1 DAGs
 [2024-06-18T17:45:41.324-0400] {logging_mixin.py:188} INFO - [2024-06-18T17:45:41.324-0400] {dag.py:3954} INFO - Setting next_dagrun for example_dynamic_task_mapping to 2022-03-04 00:00:00+00:00, run_after=2022-03-05 00:00:00+00:00
 [2024-06-18T17:45:41.355-0400] {processor.py:183} INFO - Processing /Users/jbshome/Desktop/us_debt_etl_pipeline/debt_env/lib/python3.12/site-packages/airflow/example_dags/example_dynamic_task_mapping.py took 0.316 seconds
+[2024-06-18T17:50:02.029-0400] {processor.py:161} INFO - Started process (PID=27829) to work on /Users/jbshome/Desktop/us_debt_etl_pipeline/debt_env/lib/python3.12/site-packages/airflow/example_dags/example_dynamic_task_mapping.py
+[2024-06-18T17:50:02.030-0400] {processor.py:830} INFO - Processing file /Users/jbshome/Desktop/us_debt_etl_pipeline/debt_env/lib/python3.12/site-packages/airflow/example_dags/example_dynamic_task_mapping.py for tasks to queue
+[2024-06-18T17:50:02.031-0400] {logging_mixin.py:188} INFO - [2024-06-18T17:50:02.031-0400] {dagbag.py:545} INFO - Filling up the DagBag from /Users/jbshome/Desktop/us_debt_etl_pipeline/debt_env/lib/python3.12/site-packages/airflow/example_dags/example_dynamic_task_mapping.py
+[2024-06-18T17:50:02.169-0400] {processor.py:840} INFO - DAG(s) 'example_dynamic_task_mapping' retrieved from /Users/jbshome/Desktop/us_debt_etl_pipeline/debt_env/lib/python3.12/site-packages/airflow/example_dags/example_dynamic_task_mapping.py
+[2024-06-18T17:50:02.451-0400] {logging_mixin.py:188} INFO - [2024-06-18T17:50:02.451-0400] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-06-18T17:50:02.484-0400] {logging_mixin.py:188} INFO - [2024-06-18T17:50:02.484-0400] {dag.py:3954} INFO - Setting next_dagrun for example_dynamic_task_mapping to 2022-03-04 00:00:00+00:00, run_after=2022-03-05 00:00:00+00:00
+[2024-06-18T17:50:02.518-0400] {processor.py:183} INFO - Processing /Users/jbshome/Desktop/us_debt_etl_pipeline/debt_env/lib/python3.12/site-packages/airflow/example_dags/example_dynamic_task_mapping.py took 0.494 seconds

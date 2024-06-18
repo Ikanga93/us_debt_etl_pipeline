@@ -166,3 +166,19 @@
 [2024-06-18T17:47:24.553-0400] {logging_mixin.py:188} INFO - [2024-06-18T17:47:24.553-0400] {dag.py:3954} INFO - Setting next_dagrun for example_xcom_args to None, run_after=None
 [2024-06-18T17:47:24.559-0400] {logging_mixin.py:188} INFO - [2024-06-18T17:47:24.558-0400] {dag.py:3954} INFO - Setting next_dagrun for example_xcom_args_with_operators to None, run_after=None
 [2024-06-18T17:47:24.591-0400] {processor.py:183} INFO - Processing /Users/jbshome/Desktop/us_debt_etl_pipeline/debt_env/lib/python3.12/site-packages/airflow/example_dags/example_xcomargs.py took 0.349 seconds
+[2024-06-18T17:51:30.087-0400] {processor.py:161} INFO - Started process (PID=28063) to work on /Users/jbshome/Desktop/us_debt_etl_pipeline/debt_env/lib/python3.12/site-packages/airflow/example_dags/example_xcomargs.py
+[2024-06-18T17:51:30.089-0400] {processor.py:830} INFO - Processing file /Users/jbshome/Desktop/us_debt_etl_pipeline/debt_env/lib/python3.12/site-packages/airflow/example_dags/example_xcomargs.py for tasks to queue
+[2024-06-18T17:51:30.090-0400] {logging_mixin.py:188} INFO - [2024-06-18T17:51:30.090-0400] {dagbag.py:545} INFO - Filling up the DagBag from /Users/jbshome/Desktop/us_debt_etl_pipeline/debt_env/lib/python3.12/site-packages/airflow/example_dags/example_xcomargs.py
+[2024-06-18T17:51:30.184-0400] {processor.py:840} INFO - DAG(s) 'example_xcom_args_with_operators', 'example_xcom_args' retrieved from /Users/jbshome/Desktop/us_debt_etl_pipeline/debt_env/lib/python3.12/site-packages/airflow/example_dags/example_xcomargs.py
+[2024-06-18T17:51:30.440-0400] {logging_mixin.py:188} INFO - [2024-06-18T17:51:30.439-0400] {dag.py:3096} INFO - Sync 2 DAGs
+[2024-06-18T17:51:30.470-0400] {logging_mixin.py:188} INFO - [2024-06-18T17:51:30.469-0400] {dag.py:3954} INFO - Setting next_dagrun for example_xcom_args to None, run_after=None
+[2024-06-18T17:51:30.476-0400] {logging_mixin.py:188} INFO - [2024-06-18T17:51:30.475-0400] {dag.py:3954} INFO - Setting next_dagrun for example_xcom_args_with_operators to None, run_after=None
+[2024-06-18T17:51:30.515-0400] {processor.py:183} INFO - Processing /Users/jbshome/Desktop/us_debt_etl_pipeline/debt_env/lib/python3.12/site-packages/airflow/example_dags/example_xcomargs.py took 0.438 seconds
+[2024-06-18T17:55:37.681-0400] {processor.py:161} INFO - Started process (PID=29122) to work on /Users/jbshome/Desktop/us_debt_etl_pipeline/debt_env/lib/python3.12/site-packages/airflow/example_dags/example_xcomargs.py
+[2024-06-18T17:55:37.685-0400] {processor.py:830} INFO - Processing file /Users/jbshome/Desktop/us_debt_etl_pipeline/debt_env/lib/python3.12/site-packages/airflow/example_dags/example_xcomargs.py for tasks to queue
+[2024-06-18T17:55:37.686-0400] {logging_mixin.py:188} INFO - [2024-06-18T17:55:37.686-0400] {dagbag.py:545} INFO - Filling up the DagBag from /Users/jbshome/Desktop/us_debt_etl_pipeline/debt_env/lib/python3.12/site-packages/airflow/example_dags/example_xcomargs.py
+[2024-06-18T17:55:37.728-0400] {processor.py:840} INFO - DAG(s) 'example_xcom_args', 'example_xcom_args_with_operators' retrieved from /Users/jbshome/Desktop/us_debt_etl_pipeline/debt_env/lib/python3.12/site-packages/airflow/example_dags/example_xcomargs.py
+[2024-06-18T17:55:37.845-0400] {logging_mixin.py:188} INFO - [2024-06-18T17:55:37.845-0400] {dag.py:3096} INFO - Sync 2 DAGs
+[2024-06-18T17:55:37.860-0400] {logging_mixin.py:188} INFO - [2024-06-18T17:55:37.859-0400] {dag.py:3954} INFO - Setting next_dagrun for example_xcom_args to None, run_after=None
+[2024-06-18T17:55:37.863-0400] {logging_mixin.py:188} INFO - [2024-06-18T17:55:37.863-0400] {dag.py:3954} INFO - Setting next_dagrun for example_xcom_args_with_operators to None, run_after=None
+[2024-06-18T17:55:37.882-0400] {processor.py:183} INFO - Processing /Users/jbshome/Desktop/us_debt_etl_pipeline/debt_env/lib/python3.12/site-packages/airflow/example_dags/example_xcomargs.py took 0.205 seconds

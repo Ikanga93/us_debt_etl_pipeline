@@ -142,3 +142,17 @@
 [2024-06-18T17:48:03.868-0400] {logging_mixin.py:188} INFO - [2024-06-18T17:48:03.867-0400] {dag.py:3096} INFO - Sync 1 DAGs
 [2024-06-18T17:48:03.907-0400] {logging_mixin.py:188} INFO - [2024-06-18T17:48:03.906-0400] {dag.py:3954} INFO - Setting next_dagrun for example_skip_dag to 2024-06-17 00:00:00+00:00, run_after=2024-06-18 00:00:00+00:00
 [2024-06-18T17:48:03.951-0400] {processor.py:183} INFO - Processing /Users/jbshome/Desktop/us_debt_etl_pipeline/debt_env/lib/python3.12/site-packages/airflow/example_dags/example_skip_dag.py took 0.335 seconds
+[2024-06-18T17:52:37.259-0400] {processor.py:161} INFO - Started process (PID=28281) to work on /Users/jbshome/Desktop/us_debt_etl_pipeline/debt_env/lib/python3.12/site-packages/airflow/example_dags/example_skip_dag.py
+[2024-06-18T17:52:37.261-0400] {processor.py:830} INFO - Processing file /Users/jbshome/Desktop/us_debt_etl_pipeline/debt_env/lib/python3.12/site-packages/airflow/example_dags/example_skip_dag.py for tasks to queue
+[2024-06-18T17:52:37.262-0400] {logging_mixin.py:188} INFO - [2024-06-18T17:52:37.262-0400] {dagbag.py:545} INFO - Filling up the DagBag from /Users/jbshome/Desktop/us_debt_etl_pipeline/debt_env/lib/python3.12/site-packages/airflow/example_dags/example_skip_dag.py
+[2024-06-18T17:52:37.277-0400] {processor.py:840} INFO - DAG(s) 'example_skip_dag' retrieved from /Users/jbshome/Desktop/us_debt_etl_pipeline/debt_env/lib/python3.12/site-packages/airflow/example_dags/example_skip_dag.py
+[2024-06-18T17:52:37.581-0400] {logging_mixin.py:188} INFO - [2024-06-18T17:52:37.581-0400] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-06-18T17:52:37.624-0400] {logging_mixin.py:188} INFO - [2024-06-18T17:52:37.623-0400] {dag.py:3954} INFO - Setting next_dagrun for example_skip_dag to 2024-06-17 00:00:00+00:00, run_after=2024-06-18 00:00:00+00:00
+[2024-06-18T17:52:37.666-0400] {processor.py:183} INFO - Processing /Users/jbshome/Desktop/us_debt_etl_pipeline/debt_env/lib/python3.12/site-packages/airflow/example_dags/example_skip_dag.py took 0.413 seconds
+[2024-06-18T17:56:18.260-0400] {processor.py:161} INFO - Started process (PID=29380) to work on /Users/jbshome/Desktop/us_debt_etl_pipeline/debt_env/lib/python3.12/site-packages/airflow/example_dags/example_skip_dag.py
+[2024-06-18T17:56:18.266-0400] {processor.py:830} INFO - Processing file /Users/jbshome/Desktop/us_debt_etl_pipeline/debt_env/lib/python3.12/site-packages/airflow/example_dags/example_skip_dag.py for tasks to queue
+[2024-06-18T17:56:18.267-0400] {logging_mixin.py:188} INFO - [2024-06-18T17:56:18.267-0400] {dagbag.py:545} INFO - Filling up the DagBag from /Users/jbshome/Desktop/us_debt_etl_pipeline/debt_env/lib/python3.12/site-packages/airflow/example_dags/example_skip_dag.py
+[2024-06-18T17:56:18.290-0400] {processor.py:840} INFO - DAG(s) 'example_skip_dag' retrieved from /Users/jbshome/Desktop/us_debt_etl_pipeline/debt_env/lib/python3.12/site-packages/airflow/example_dags/example_skip_dag.py
+[2024-06-18T17:56:18.570-0400] {logging_mixin.py:188} INFO - [2024-06-18T17:56:18.569-0400] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-06-18T17:56:18.601-0400] {logging_mixin.py:188} INFO - [2024-06-18T17:56:18.601-0400] {dag.py:3954} INFO - Setting next_dagrun for example_skip_dag to 2024-06-17 00:00:00+00:00, run_after=2024-06-18 00:00:00+00:00
+[2024-06-18T17:56:18.642-0400] {processor.py:183} INFO - Processing /Users/jbshome/Desktop/us_debt_etl_pipeline/debt_env/lib/python3.12/site-packages/airflow/example_dags/example_skip_dag.py took 0.386 seconds

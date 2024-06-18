@@ -162,3 +162,19 @@
 [2024-06-18T17:48:47.261-0400] {logging_mixin.py:188} INFO - [2024-06-18T17:48:47.261-0400] {dag.py:3096} INFO - Sync 1 DAGs
 [2024-06-18T17:48:47.274-0400] {logging_mixin.py:188} INFO - [2024-06-18T17:48:47.274-0400] {dag.py:3954} INFO - Setting next_dagrun for example_python_operator to None, run_after=None
 [2024-06-18T17:48:47.320-0400] {processor.py:183} INFO - Processing /Users/jbshome/Desktop/us_debt_etl_pipeline/debt_env/lib/python3.12/site-packages/airflow/example_dags/example_python_operator.py took 0.308 seconds
+[2024-06-18T17:53:16.079-0400] {processor.py:161} INFO - Started process (PID=28562) to work on /Users/jbshome/Desktop/us_debt_etl_pipeline/debt_env/lib/python3.12/site-packages/airflow/example_dags/example_python_operator.py
+[2024-06-18T17:53:16.081-0400] {processor.py:830} INFO - Processing file /Users/jbshome/Desktop/us_debt_etl_pipeline/debt_env/lib/python3.12/site-packages/airflow/example_dags/example_python_operator.py for tasks to queue
+[2024-06-18T17:53:16.082-0400] {logging_mixin.py:188} INFO - [2024-06-18T17:53:16.082-0400] {dagbag.py:545} INFO - Filling up the DagBag from /Users/jbshome/Desktop/us_debt_etl_pipeline/debt_env/lib/python3.12/site-packages/airflow/example_dags/example_python_operator.py
+[2024-06-18T17:53:16.126-0400] {logging_mixin.py:188} INFO - [2024-06-18T17:53:16.126-0400] {example_python_operator.py:93} WARNING - The virtalenv_python example task requires virtualenv, please install it.
+[2024-06-18T17:53:16.133-0400] {processor.py:840} INFO - DAG(s) 'example_python_operator' retrieved from /Users/jbshome/Desktop/us_debt_etl_pipeline/debt_env/lib/python3.12/site-packages/airflow/example_dags/example_python_operator.py
+[2024-06-18T17:53:16.341-0400] {logging_mixin.py:188} INFO - [2024-06-18T17:53:16.340-0400] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-06-18T17:53:16.358-0400] {logging_mixin.py:188} INFO - [2024-06-18T17:53:16.357-0400] {dag.py:3954} INFO - Setting next_dagrun for example_python_operator to None, run_after=None
+[2024-06-18T17:53:16.393-0400] {processor.py:183} INFO - Processing /Users/jbshome/Desktop/us_debt_etl_pipeline/debt_env/lib/python3.12/site-packages/airflow/example_dags/example_python_operator.py took 0.318 seconds
+[2024-06-18T17:56:52.277-0400] {processor.py:161} INFO - Started process (PID=29411) to work on /Users/jbshome/Desktop/us_debt_etl_pipeline/debt_env/lib/python3.12/site-packages/airflow/example_dags/example_python_operator.py
+[2024-06-18T17:56:52.280-0400] {processor.py:830} INFO - Processing file /Users/jbshome/Desktop/us_debt_etl_pipeline/debt_env/lib/python3.12/site-packages/airflow/example_dags/example_python_operator.py for tasks to queue
+[2024-06-18T17:56:52.281-0400] {logging_mixin.py:188} INFO - [2024-06-18T17:56:52.281-0400] {dagbag.py:545} INFO - Filling up the DagBag from /Users/jbshome/Desktop/us_debt_etl_pipeline/debt_env/lib/python3.12/site-packages/airflow/example_dags/example_python_operator.py
+[2024-06-18T17:56:52.321-0400] {logging_mixin.py:188} INFO - [2024-06-18T17:56:52.321-0400] {example_python_operator.py:93} WARNING - The virtalenv_python example task requires virtualenv, please install it.
+[2024-06-18T17:56:52.328-0400] {processor.py:840} INFO - DAG(s) 'example_python_operator' retrieved from /Users/jbshome/Desktop/us_debt_etl_pipeline/debt_env/lib/python3.12/site-packages/airflow/example_dags/example_python_operator.py
+[2024-06-18T17:56:52.501-0400] {logging_mixin.py:188} INFO - [2024-06-18T17:56:52.501-0400] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-06-18T17:56:52.516-0400] {logging_mixin.py:188} INFO - [2024-06-18T17:56:52.516-0400] {dag.py:3954} INFO - Setting next_dagrun for example_python_operator to None, run_after=None
+[2024-06-18T17:56:52.550-0400] {processor.py:183} INFO - Processing /Users/jbshome/Desktop/us_debt_etl_pipeline/debt_env/lib/python3.12/site-packages/airflow/example_dags/example_python_operator.py took 0.278 seconds

@@ -162,3 +162,19 @@
 [2024-06-18T17:48:53.420-0400] {logging_mixin.py:188} INFO - [2024-06-18T17:48:53.419-0400] {dag.py:3096} INFO - Sync 1 DAGs
 [2024-06-18T17:48:53.445-0400] {logging_mixin.py:188} INFO - [2024-06-18T17:48:53.445-0400] {dag.py:3954} INFO - Setting next_dagrun for example_python_decorator to None, run_after=None
 [2024-06-18T17:48:53.521-0400] {processor.py:183} INFO - Processing /Users/jbshome/Desktop/us_debt_etl_pipeline/debt_env/lib/python3.12/site-packages/airflow/example_dags/example_python_decorator.py took 0.693 seconds
+[2024-06-18T17:53:19.979-0400] {processor.py:161} INFO - Started process (PID=28566) to work on /Users/jbshome/Desktop/us_debt_etl_pipeline/debt_env/lib/python3.12/site-packages/airflow/example_dags/example_python_decorator.py
+[2024-06-18T17:53:19.981-0400] {processor.py:830} INFO - Processing file /Users/jbshome/Desktop/us_debt_etl_pipeline/debt_env/lib/python3.12/site-packages/airflow/example_dags/example_python_decorator.py for tasks to queue
+[2024-06-18T17:53:19.982-0400] {logging_mixin.py:188} INFO - [2024-06-18T17:53:19.982-0400] {dagbag.py:545} INFO - Filling up the DagBag from /Users/jbshome/Desktop/us_debt_etl_pipeline/debt_env/lib/python3.12/site-packages/airflow/example_dags/example_python_decorator.py
+[2024-06-18T17:53:20.048-0400] {logging_mixin.py:188} INFO - [2024-06-18T17:53:20.048-0400] {example_python_decorator.py:80} WARNING - The virtalenv_python example task requires virtualenv, please install it.
+[2024-06-18T17:53:20.052-0400] {processor.py:840} INFO - DAG(s) 'example_python_decorator' retrieved from /Users/jbshome/Desktop/us_debt_etl_pipeline/debt_env/lib/python3.12/site-packages/airflow/example_dags/example_python_decorator.py
+[2024-06-18T17:53:20.243-0400] {logging_mixin.py:188} INFO - [2024-06-18T17:53:20.242-0400] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-06-18T17:53:20.262-0400] {logging_mixin.py:188} INFO - [2024-06-18T17:53:20.261-0400] {dag.py:3954} INFO - Setting next_dagrun for example_python_decorator to None, run_after=None
+[2024-06-18T17:53:20.302-0400] {processor.py:183} INFO - Processing /Users/jbshome/Desktop/us_debt_etl_pipeline/debt_env/lib/python3.12/site-packages/airflow/example_dags/example_python_decorator.py took 0.327 seconds
+[2024-06-18T17:56:56.945-0400] {processor.py:161} INFO - Started process (PID=29417) to work on /Users/jbshome/Desktop/us_debt_etl_pipeline/debt_env/lib/python3.12/site-packages/airflow/example_dags/example_python_decorator.py
+[2024-06-18T17:56:56.947-0400] {processor.py:830} INFO - Processing file /Users/jbshome/Desktop/us_debt_etl_pipeline/debt_env/lib/python3.12/site-packages/airflow/example_dags/example_python_decorator.py for tasks to queue
+[2024-06-18T17:56:56.949-0400] {logging_mixin.py:188} INFO - [2024-06-18T17:56:56.948-0400] {dagbag.py:545} INFO - Filling up the DagBag from /Users/jbshome/Desktop/us_debt_etl_pipeline/debt_env/lib/python3.12/site-packages/airflow/example_dags/example_python_decorator.py
+[2024-06-18T17:56:57.010-0400] {logging_mixin.py:188} INFO - [2024-06-18T17:56:57.010-0400] {example_python_decorator.py:80} WARNING - The virtalenv_python example task requires virtualenv, please install it.
+[2024-06-18T17:56:57.016-0400] {processor.py:840} INFO - DAG(s) 'example_python_decorator' retrieved from /Users/jbshome/Desktop/us_debt_etl_pipeline/debt_env/lib/python3.12/site-packages/airflow/example_dags/example_python_decorator.py
+[2024-06-18T17:56:57.212-0400] {logging_mixin.py:188} INFO - [2024-06-18T17:56:57.212-0400] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-06-18T17:56:57.242-0400] {logging_mixin.py:188} INFO - [2024-06-18T17:56:57.241-0400] {dag.py:3954} INFO - Setting next_dagrun for example_python_decorator to None, run_after=None
+[2024-06-18T17:56:57.284-0400] {processor.py:183} INFO - Processing /Users/jbshome/Desktop/us_debt_etl_pipeline/debt_env/lib/python3.12/site-packages/airflow/example_dags/example_python_decorator.py took 0.342 seconds

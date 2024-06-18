@@ -72,3 +72,10 @@
 [2024-06-18T17:46:19.306-0400] {logging_mixin.py:188} INFO - [2024-06-18T17:46:19.305-0400] {dag.py:3096} INFO - Sync 1 DAGs
 [2024-06-18T17:46:19.348-0400] {logging_mixin.py:188} INFO - [2024-06-18T17:46:19.348-0400] {dag.py:3954} INFO - Setting next_dagrun for example_bash_operator to 2024-06-17 00:00:00+00:00, run_after=2024-06-18 00:00:00+00:00
 [2024-06-18T17:46:19.390-0400] {processor.py:183} INFO - Processing /Users/jbshome/Desktop/us_debt_etl_pipeline/debt_env/lib/python3.12/site-packages/airflow/example_dags/example_bash_operator.py took 0.381 seconds
+[2024-06-18T17:54:36.382-0400] {processor.py:161} INFO - Started process (PID=28974) to work on /Users/jbshome/Desktop/us_debt_etl_pipeline/debt_env/lib/python3.12/site-packages/airflow/example_dags/example_bash_operator.py
+[2024-06-18T17:54:36.384-0400] {processor.py:830} INFO - Processing file /Users/jbshome/Desktop/us_debt_etl_pipeline/debt_env/lib/python3.12/site-packages/airflow/example_dags/example_bash_operator.py for tasks to queue
+[2024-06-18T17:54:36.386-0400] {logging_mixin.py:188} INFO - [2024-06-18T17:54:36.386-0400] {dagbag.py:545} INFO - Filling up the DagBag from /Users/jbshome/Desktop/us_debt_etl_pipeline/debt_env/lib/python3.12/site-packages/airflow/example_dags/example_bash_operator.py
+[2024-06-18T17:54:36.412-0400] {processor.py:840} INFO - DAG(s) 'example_bash_operator' retrieved from /Users/jbshome/Desktop/us_debt_etl_pipeline/debt_env/lib/python3.12/site-packages/airflow/example_dags/example_bash_operator.py
+[2024-06-18T17:54:36.602-0400] {logging_mixin.py:188} INFO - [2024-06-18T17:54:36.601-0400] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-06-18T17:54:36.631-0400] {logging_mixin.py:188} INFO - [2024-06-18T17:54:36.630-0400] {dag.py:3954} INFO - Setting next_dagrun for example_bash_operator to 2024-06-17 00:00:00+00:00, run_after=2024-06-18 00:00:00+00:00
+[2024-06-18T17:54:36.673-0400] {processor.py:183} INFO - Processing /Users/jbshome/Desktop/us_debt_etl_pipeline/debt_env/lib/python3.12/site-packages/airflow/example_dags/example_bash_operator.py took 0.294 seconds

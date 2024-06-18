@@ -142,3 +142,17 @@
 [2024-06-18T17:48:31.362-0400] {logging_mixin.py:188} INFO - [2024-06-18T17:48:31.361-0400] {dag.py:3096} INFO - Sync 1 DAGs
 [2024-06-18T17:48:31.395-0400] {logging_mixin.py:188} INFO - [2024-06-18T17:48:31.394-0400] {dag.py:3954} INFO - Setting next_dagrun for example_sensors to None, run_after=None
 [2024-06-18T17:48:31.447-0400] {processor.py:183} INFO - Processing /Users/jbshome/Desktop/us_debt_etl_pipeline/debt_env/lib/python3.12/site-packages/airflow/example_dags/example_sensors.py took 0.516 seconds
+[2024-06-18T17:53:05.828-0400] {processor.py:161} INFO - Started process (PID=28467) to work on /Users/jbshome/Desktop/us_debt_etl_pipeline/debt_env/lib/python3.12/site-packages/airflow/example_dags/example_sensors.py
+[2024-06-18T17:53:05.830-0400] {processor.py:830} INFO - Processing file /Users/jbshome/Desktop/us_debt_etl_pipeline/debt_env/lib/python3.12/site-packages/airflow/example_dags/example_sensors.py for tasks to queue
+[2024-06-18T17:53:05.832-0400] {logging_mixin.py:188} INFO - [2024-06-18T17:53:05.832-0400] {dagbag.py:545} INFO - Filling up the DagBag from /Users/jbshome/Desktop/us_debt_etl_pipeline/debt_env/lib/python3.12/site-packages/airflow/example_dags/example_sensors.py
+[2024-06-18T17:53:05.870-0400] {processor.py:840} INFO - DAG(s) 'example_sensors' retrieved from /Users/jbshome/Desktop/us_debt_etl_pipeline/debt_env/lib/python3.12/site-packages/airflow/example_dags/example_sensors.py
+[2024-06-18T17:53:06.238-0400] {logging_mixin.py:188} INFO - [2024-06-18T17:53:06.237-0400] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-06-18T17:53:06.255-0400] {logging_mixin.py:188} INFO - [2024-06-18T17:53:06.255-0400] {dag.py:3954} INFO - Setting next_dagrun for example_sensors to None, run_after=None
+[2024-06-18T17:53:06.288-0400] {processor.py:183} INFO - Processing /Users/jbshome/Desktop/us_debt_etl_pipeline/debt_env/lib/python3.12/site-packages/airflow/example_dags/example_sensors.py took 0.468 seconds
+[2024-06-18T17:56:44.768-0400] {processor.py:161} INFO - Started process (PID=29403) to work on /Users/jbshome/Desktop/us_debt_etl_pipeline/debt_env/lib/python3.12/site-packages/airflow/example_dags/example_sensors.py
+[2024-06-18T17:56:44.771-0400] {processor.py:830} INFO - Processing file /Users/jbshome/Desktop/us_debt_etl_pipeline/debt_env/lib/python3.12/site-packages/airflow/example_dags/example_sensors.py for tasks to queue
+[2024-06-18T17:56:44.772-0400] {logging_mixin.py:188} INFO - [2024-06-18T17:56:44.772-0400] {dagbag.py:545} INFO - Filling up the DagBag from /Users/jbshome/Desktop/us_debt_etl_pipeline/debt_env/lib/python3.12/site-packages/airflow/example_dags/example_sensors.py
+[2024-06-18T17:56:44.798-0400] {processor.py:840} INFO - DAG(s) 'example_sensors' retrieved from /Users/jbshome/Desktop/us_debt_etl_pipeline/debt_env/lib/python3.12/site-packages/airflow/example_dags/example_sensors.py
+[2024-06-18T17:56:45.007-0400] {logging_mixin.py:188} INFO - [2024-06-18T17:56:45.007-0400] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-06-18T17:56:45.024-0400] {logging_mixin.py:188} INFO - [2024-06-18T17:56:45.024-0400] {dag.py:3954} INFO - Setting next_dagrun for example_sensors to None, run_after=None
+[2024-06-18T17:56:45.053-0400] {processor.py:183} INFO - Processing /Users/jbshome/Desktop/us_debt_etl_pipeline/debt_env/lib/python3.12/site-packages/airflow/example_dags/example_sensors.py took 0.288 seconds

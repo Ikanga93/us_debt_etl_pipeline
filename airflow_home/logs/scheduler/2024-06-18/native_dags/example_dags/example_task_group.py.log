@@ -142,3 +142,17 @@
 [2024-06-18T17:47:50.452-0400] {logging_mixin.py:188} INFO - [2024-06-18T17:47:50.452-0400] {dag.py:3096} INFO - Sync 1 DAGs
 [2024-06-18T17:47:50.471-0400] {logging_mixin.py:188} INFO - [2024-06-18T17:47:50.471-0400] {dag.py:3954} INFO - Setting next_dagrun for example_task_group to 2024-06-17 00:00:00+00:00, run_after=2024-06-18 00:00:00+00:00
 [2024-06-18T17:47:50.500-0400] {processor.py:183} INFO - Processing /Users/jbshome/Desktop/us_debt_etl_pipeline/debt_env/lib/python3.12/site-packages/airflow/example_dags/example_task_group.py took 0.258 seconds
+[2024-06-18T17:52:15.789-0400] {processor.py:161} INFO - Started process (PID=28260) to work on /Users/jbshome/Desktop/us_debt_etl_pipeline/debt_env/lib/python3.12/site-packages/airflow/example_dags/example_task_group.py
+[2024-06-18T17:52:15.802-0400] {processor.py:830} INFO - Processing file /Users/jbshome/Desktop/us_debt_etl_pipeline/debt_env/lib/python3.12/site-packages/airflow/example_dags/example_task_group.py for tasks to queue
+[2024-06-18T17:52:15.803-0400] {logging_mixin.py:188} INFO - [2024-06-18T17:52:15.803-0400] {dagbag.py:545} INFO - Filling up the DagBag from /Users/jbshome/Desktop/us_debt_etl_pipeline/debt_env/lib/python3.12/site-packages/airflow/example_dags/example_task_group.py
+[2024-06-18T17:52:15.825-0400] {processor.py:840} INFO - DAG(s) 'example_task_group' retrieved from /Users/jbshome/Desktop/us_debt_etl_pipeline/debt_env/lib/python3.12/site-packages/airflow/example_dags/example_task_group.py
+[2024-06-18T17:52:16.201-0400] {logging_mixin.py:188} INFO - [2024-06-18T17:52:16.201-0400] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-06-18T17:52:16.248-0400] {logging_mixin.py:188} INFO - [2024-06-18T17:52:16.248-0400] {dag.py:3954} INFO - Setting next_dagrun for example_task_group to 2024-06-17 00:00:00+00:00, run_after=2024-06-18 00:00:00+00:00
+[2024-06-18T17:52:16.345-0400] {processor.py:183} INFO - Processing /Users/jbshome/Desktop/us_debt_etl_pipeline/debt_env/lib/python3.12/site-packages/airflow/example_dags/example_task_group.py took 0.570 seconds
+[2024-06-18T17:56:05.795-0400] {processor.py:161} INFO - Started process (PID=29366) to work on /Users/jbshome/Desktop/us_debt_etl_pipeline/debt_env/lib/python3.12/site-packages/airflow/example_dags/example_task_group.py
+[2024-06-18T17:56:05.798-0400] {processor.py:830} INFO - Processing file /Users/jbshome/Desktop/us_debt_etl_pipeline/debt_env/lib/python3.12/site-packages/airflow/example_dags/example_task_group.py for tasks to queue
+[2024-06-18T17:56:05.799-0400] {logging_mixin.py:188} INFO - [2024-06-18T17:56:05.799-0400] {dagbag.py:545} INFO - Filling up the DagBag from /Users/jbshome/Desktop/us_debt_etl_pipeline/debt_env/lib/python3.12/site-packages/airflow/example_dags/example_task_group.py
+[2024-06-18T17:56:05.820-0400] {processor.py:840} INFO - DAG(s) 'example_task_group' retrieved from /Users/jbshome/Desktop/us_debt_etl_pipeline/debt_env/lib/python3.12/site-packages/airflow/example_dags/example_task_group.py
+[2024-06-18T17:56:06.055-0400] {logging_mixin.py:188} INFO - [2024-06-18T17:56:06.054-0400] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-06-18T17:56:06.085-0400] {logging_mixin.py:188} INFO - [2024-06-18T17:56:06.085-0400] {dag.py:3954} INFO - Setting next_dagrun for example_task_group to 2024-06-17 00:00:00+00:00, run_after=2024-06-18 00:00:00+00:00
+[2024-06-18T17:56:06.128-0400] {processor.py:183} INFO - Processing /Users/jbshome/Desktop/us_debt_etl_pipeline/debt_env/lib/python3.12/site-packages/airflow/example_dags/example_task_group.py took 0.338 seconds
