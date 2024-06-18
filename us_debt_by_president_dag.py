@@ -1,6 +1,5 @@
 # Import necessary modules
-from airflow import DAG
-from airflow.operators.python import PythonOperator
+
 import sys
 import os
 import logging
@@ -65,27 +64,6 @@ url = 'https://api.fiscaldata.treasury.gov/services/api/fiscal_service/v2/accoun
 # Path to csv file
 us_debt_csv = '/Users/jbshome/Desktop/us_debt_etl_pipeline/csv_files/us_debt_by_president.csv'
 
-# Define a dictionary of default parameters we can use when creating tasks.
-# These args will get passed on to each operator
-default_args = {
-    'owner': 'airflow',
-    'depends_on_past': True,
-    'email_on_failure': True,
-    'email_on_retry': True,
-    'retries': 1,
-    'retry_delay': timedelta(minutes=5),
-}
-
-# Define the DAG object.
-dag = DAG(
-    'us_debt_by_president_dag',
-    default_args=default_args,
-    description='ETL pipeline for US debt data',
-    schedule='@yearly',
-    start_date=pendulum.today('UTC').add(days=-1,),
-    catchup=False,
-)
-
 # Define the first task in the DAG.
 # This task will extract data from an api
 def extract_task(api_url):
@@ -106,7 +84,7 @@ def extract_task(api_url):
     return df
 
 # Call the extract_task function
-# df = extract_task(url)
+df = extract_task(url)
 
 # Define the second task in the DAG.
 # This task will transform the data
@@ -134,7 +112,7 @@ def transform_task(data):
     return data
 
 # Call the extract_task function
-# cleaned_df = transform_task(df)
+cleaned_df = transform_task(df)
 
 # Define the third task in the DAG.
 # This task will load the data to a csv file
@@ -145,32 +123,4 @@ def load_task(df, csv_file):
     return df
 
 # Call the load_task function
-# load_task(cleaned_df, us_debt_csv)
-
-# Define the tasks
-extract_operator = PythonOperator(
-    task_id='extract_task',
-    python_callable=extract_task,
-    op_args=[url],
-    dag=dag,
-)
-
-transform_operator = PythonOperator(
-    task_id='transform_task',
-    python_callable=transform_task,
-    op_args=['{{ ti.xcom_pull(task_ids="extract_task") }}'],
-    dag=dag,
-)
-
-load_operator = PythonOperator(
-    task_id='load_task',
-    python_callable=load_task,
-    op_args=['{{ ti.xcom_pull(task_ids="transform_task") }}', us_debt_csv],
-    dag=dag,
-)
-
-# Set the task dependencies
-extract_operator >> transform_operator >> load_operator
-
-
-    
+load_task(cleaned_df, us_debt_csv)
