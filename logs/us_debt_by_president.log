@@ -316,3 +316,9 @@ NameError: name 'pendulum' is not defined
 2024-06-18 17:58:25,338 - airflow.models.dag - INFO - Setting next_dagrun for us_debt_by_president_dag to 2025-01-01 00:00:00+00:00, run_after=2026-01-01 00:00:00+00:00
 2024-06-18 17:58:25,360 - airflow.settings - DEBUG - Disposing DB connection pool (PID 30144)
 2024-06-18 17:58:25,360 - airflow.settings - DEBUG - Disposing DB connection pool (PID 30144)
+2024-06-18 18:11:08,391 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.fiscaldata.treasury.gov:443
+2024-06-18 18:11:08,718 - urllib3.connectionpool - DEBUG - https://api.fiscaldata.treasury.gov:443 "GET /services/api/fiscal_service/v2/accounting/od/debt_outstanding?fields=record_fiscal_year,%20debt_outstanding_amt&sort=-record_fiscal_year&format=json&page%5Bnumber%5D=1&page%5Bsize%5D=235 HTTP/1.1" 200 4289
+2024-06-18 18:11:08,723 - root - INFO - Data extracted successfully
+2024-06-18 18:11:08,731 - root - INFO - President column added to DataFrame
+2024-06-18 18:11:08,744 - root - INFO - Data transformed successfully
+2024-06-18 18:11:08,775 - root - INFO - Data saved to csv successfully
