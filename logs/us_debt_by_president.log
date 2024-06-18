@@ -1,0 +1,296 @@
+2024-06-18 15:40:40,420 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.fiscaldata.treasury.gov:443
+2024-06-18 15:40:40,692 - urllib3.connectionpool - DEBUG - https://api.fiscaldata.treasury.gov:443 "GET /services/api/fiscal_service/v2/accounting/od/debt_outstanding?fields=record_fiscal_year,%20debt_outstanding_amt&sort=-record_fiscal_year&format=json&page%5Bnumber%5D=1&page%5Bsize%5D=235 HTTP/1.1" 200 4289
+2024-06-18 15:40:40,694 - root - INFO - Data extracted successfully
+2024-06-18 15:40:40,714 - root - INFO - President column added to DataFrame
+2024-06-18 15:40:40,718 - root - INFO - Data transformed successfully
+2024-06-18 15:40:40,738 - root - INFO - Data saved to csv successfully
+2024-06-18 15:40:40,843 - airflow.settings - DEBUG - Disposing DB connection pool (PID 13596)
+2024-06-18 15:47:45,687 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.fiscaldata.treasury.gov:443
+2024-06-18 15:47:45,994 - urllib3.connectionpool - DEBUG - https://api.fiscaldata.treasury.gov:443 "GET /services/api/fiscal_service/v2/accounting/od/debt_outstanding?fields=record_fiscal_year,%20debt_outstanding_amt&sort=-record_fiscal_year&format=json&page%5Bnumber%5D=1&page%5Bsize%5D=235 HTTP/1.1" 200 4289
+2024-06-18 15:47:45,997 - root - INFO - Data extracted successfully
+2024-06-18 15:47:46,003 - root - INFO - President column added to DataFrame
+2024-06-18 15:47:46,005 - root - INFO - Data transformed successfully
+2024-06-18 15:47:46,018 - root - INFO - Data saved to csv successfully
+2024-06-18 15:47:46,130 - airflow.settings - DEBUG - Disposing DB connection pool (PID 13982)
+2024-06-18 16:19:47,322 - cron_descriptor.GetText - DEBUG - /Users/jbshome/Desktop/us_debt_etl_pipeline/debt_env/lib/python3.12/site-packages/cron_descriptor/locale/en_US.mo Loaded
+2024-06-18 16:19:47,383 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.fiscaldata.treasury.gov:443
+2024-06-18 16:19:47,705 - urllib3.connectionpool - DEBUG - https://api.fiscaldata.treasury.gov:443 "GET /services/api/fiscal_service/v2/accounting/od/debt_outstanding?fields=record_fiscal_year,%20debt_outstanding_amt&sort=-record_fiscal_year&format=json&page%5Bnumber%5D=1&page%5Bsize%5D=235 HTTP/1.1" 200 4289
+2024-06-18 16:19:47,707 - root - INFO - Data extracted successfully
+2024-06-18 16:19:47,714 - root - INFO - President column added to DataFrame
+2024-06-18 16:19:47,744 - root - INFO - Data transformed successfully
+2024-06-18 16:19:47,765 - root - INFO - Data saved to csv successfully
+2024-06-18 16:19:47,948 - airflow.settings - DEBUG - Disposing DB connection pool (PID 17261)
+2024-06-18 16:29:04,706 - cron_descriptor.GetText - DEBUG - /Users/jbshome/Desktop/us_debt_etl_pipeline/debt_env/lib/python3.12/site-packages/cron_descriptor/locale/en_US.mo Loaded
+2024-06-18 16:29:04,710 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.fiscaldata.treasury.gov:443
+2024-06-18 16:29:05,010 - urllib3.connectionpool - DEBUG - https://api.fiscaldata.treasury.gov:443 "GET /services/api/fiscal_service/v2/accounting/od/debt_outstanding?fields=record_fiscal_year,%20debt_outstanding_amt&sort=-record_fiscal_year&format=json&page%5Bnumber%5D=1&page%5Bsize%5D=235 HTTP/1.1" 200 4289
+2024-06-18 16:29:05,013 - root - INFO - Data extracted successfully
+2024-06-18 16:29:05,018 - root - INFO - President column added to DataFrame
+2024-06-18 16:29:05,025 - root - INFO - Data transformed successfully
+2024-06-18 16:29:05,029 - root - INFO - Data saved to csv successfully
+2024-06-18 16:29:05,031 - cron_descriptor.GetText - DEBUG - /Users/jbshome/Desktop/us_debt_etl_pipeline/debt_env/lib/python3.12/site-packages/cron_descriptor/locale/en_US.mo Loaded
+2024-06-18 16:29:05,048 - airflow.models.dagbag.DagBag - DEBUG - Loaded DAG <DAG: us_debt_by_president_dag>
+2024-06-18 16:29:05,066 - airflow.models.dagbag.DagBag - DEBUG - Running dagbag.sync_to_db with retries. Try 1 of 3
+2024-06-18 16:29:05,066 - airflow.models.dagbag.DagBag - DEBUG - Calling the DAG.bulk_sync_to_db method
+2024-06-18 16:29:05,076 - airflow.models.serialized_dag - DEBUG - Checking if DAG (us_debt_by_president_dag) changed
+2024-06-18 16:29:05,277 - airflow.models.serialized_dag - DEBUG - Writing Serialized DAG: us_debt_by_president_dag to the DB
+2024-06-18 16:29:05,280 - airflow.models.serialized_dag - DEBUG - DAG: us_debt_by_president_dag written to the DB
+2024-06-18 16:29:05,281 - airflow.models.dagbag.DagBag - DEBUG - Syncing DAG permissions: us_debt_by_president_dag to the DB
+2024-06-18 16:29:05,414 - airflow.providers.fab.auth_manager.security_manager.override - INFO - Created Permission View: can edit on DAG:us_debt_by_president_dag
+2024-06-18 16:29:05,424 - airflow.providers.fab.auth_manager.security_manager.override - INFO - Created Permission View: can delete on DAG:us_debt_by_president_dag
+2024-06-18 16:29:05,430 - airflow.providers.fab.auth_manager.security_manager.override - INFO - Created Permission View: can read on DAG:us_debt_by_president_dag
+2024-06-18 16:29:05,431 - airflow.www.security_appless.ApplessAirflowSecurityManager - DEBUG - Not syncing DAG-level permissions for DAG 'DAG:us_debt_by_president_dag' as access control is unset.
+2024-06-18 16:29:05,431 - airflow.models.dag - INFO - Sync 1 DAGs
+2024-06-18 16:29:05,442 - airflow.models.dag - INFO - Creating ORM DAG for us_debt_by_president_dag
+2024-06-18 16:29:05,451 - airflow.models.dag - INFO - Setting next_dagrun for us_debt_by_president_dag to 2025-01-01 00:00:00+00:00, run_after=2026-01-01 00:00:00+00:00
+2024-06-18 16:29:05,468 - airflow.settings - DEBUG - Disposing DB connection pool (PID 19559)
+2024-06-18 16:29:05,468 - airflow.settings - DEBUG - Disposing DB connection pool (PID 19559)
+2024-06-18 16:33:08,094 - cron_descriptor.GetText - DEBUG - /Users/jbshome/Desktop/us_debt_etl_pipeline/debt_env/lib/python3.12/site-packages/cron_descriptor/locale/en_US.mo Loaded
+2024-06-18 16:33:08,098 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.fiscaldata.treasury.gov:443
+2024-06-18 16:33:08,363 - urllib3.connectionpool - DEBUG - https://api.fiscaldata.treasury.gov:443 "GET /services/api/fiscal_service/v2/accounting/od/debt_outstanding?fields=record_fiscal_year,%20debt_outstanding_amt&sort=-record_fiscal_year&format=json&page%5Bnumber%5D=1&page%5Bsize%5D=235 HTTP/1.1" 200 4289
+2024-06-18 16:33:08,365 - root - INFO - Data extracted successfully
+2024-06-18 16:33:08,370 - root - INFO - President column added to DataFrame
+2024-06-18 16:33:08,372 - root - INFO - Data transformed successfully
+2024-06-18 16:33:08,376 - root - INFO - Data saved to csv successfully
+2024-06-18 16:33:08,378 - cron_descriptor.GetText - DEBUG - /Users/jbshome/Desktop/us_debt_etl_pipeline/debt_env/lib/python3.12/site-packages/cron_descriptor/locale/en_US.mo Loaded
+2024-06-18 16:33:08,382 - airflow.models.dagbag.DagBag - DEBUG - Loaded DAG <DAG: us_debt_by_president_dag>
+2024-06-18 16:33:08,392 - airflow.models.dagbag.DagBag - DEBUG - Running dagbag.sync_to_db with retries. Try 1 of 3
+2024-06-18 16:33:08,393 - airflow.models.dagbag.DagBag - DEBUG - Calling the DAG.bulk_sync_to_db method
+2024-06-18 16:33:08,398 - airflow.models.serialized_dag - DEBUG - Checking if DAG (us_debt_by_president_dag) changed
+2024-06-18 16:33:08,677 - airflow.models.serialized_dag - DEBUG - Writing Serialized DAG: us_debt_by_president_dag to the DB
+2024-06-18 16:33:08,685 - airflow.models.serialized_dag - DEBUG - DAG: us_debt_by_president_dag written to the DB
+2024-06-18 16:33:08,686 - airflow.models.dagbag.DagBag - DEBUG - Syncing DAG permissions: us_debt_by_president_dag to the DB
+2024-06-18 16:33:08,881 - airflow.www.security_appless.ApplessAirflowSecurityManager - DEBUG - Not syncing DAG-level permissions for DAG 'DAG:us_debt_by_president_dag' as access control is unset.
+2024-06-18 16:33:08,882 - airflow.models.dag - INFO - Sync 1 DAGs
+2024-06-18 16:33:08,903 - airflow.models.dag - INFO - Setting next_dagrun for us_debt_by_president_dag to 2025-01-01 00:00:00+00:00, run_after=2026-01-01 00:00:00+00:00
+2024-06-18 16:33:08,927 - airflow.settings - DEBUG - Disposing DB connection pool (PID 20221)
+2024-06-18 16:33:08,928 - airflow.settings - DEBUG - Disposing DB connection pool (PID 20221)
+2024-06-18 16:36:16,075 - cron_descriptor.GetText - DEBUG - /Users/jbshome/Desktop/us_debt_etl_pipeline/debt_env/lib/python3.12/site-packages/cron_descriptor/locale/en_US.mo Loaded
+2024-06-18 16:36:16,082 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.fiscaldata.treasury.gov:443
+2024-06-18 16:36:17,519 - urllib3.connectionpool - DEBUG - https://api.fiscaldata.treasury.gov:443 "GET /services/api/fiscal_service/v2/accounting/od/debt_outstanding?fields=record_fiscal_year,%20debt_outstanding_amt&sort=-record_fiscal_year&format=json&page%5Bnumber%5D=1&page%5Bsize%5D=235 HTTP/1.1" 200 4289
+2024-06-18 16:36:17,522 - root - INFO - Data extracted successfully
+2024-06-18 16:36:17,526 - root - INFO - President column added to DataFrame
+2024-06-18 16:36:17,527 - root - INFO - Data transformed successfully
+2024-06-18 16:36:17,532 - root - INFO - Data saved to csv successfully
+2024-06-18 16:36:17,535 - cron_descriptor.GetText - DEBUG - /Users/jbshome/Desktop/us_debt_etl_pipeline/debt_env/lib/python3.12/site-packages/cron_descriptor/locale/en_US.mo Loaded
+2024-06-18 16:36:17,539 - airflow.models.dagbag.DagBag - DEBUG - Loaded DAG <DAG: us_debt_by_president_dag>
+2024-06-18 16:36:17,549 - airflow.models.dagbag.DagBag - DEBUG - Running dagbag.sync_to_db with retries. Try 1 of 3
+2024-06-18 16:36:17,549 - airflow.models.dagbag.DagBag - DEBUG - Calling the DAG.bulk_sync_to_db method
+2024-06-18 16:36:17,554 - airflow.models.serialized_dag - DEBUG - Checking if DAG (us_debt_by_president_dag) changed
+2024-06-18 16:36:17,681 - airflow.models.serialized_dag - DEBUG - Writing Serialized DAG: us_debt_by_president_dag to the DB
+2024-06-18 16:36:17,685 - airflow.models.serialized_dag - DEBUG - DAG: us_debt_by_president_dag written to the DB
+2024-06-18 16:36:17,685 - airflow.models.dagbag.DagBag - DEBUG - Syncing DAG permissions: us_debt_by_president_dag to the DB
+2024-06-18 16:36:17,783 - airflow.www.security_appless.ApplessAirflowSecurityManager - DEBUG - Not syncing DAG-level permissions for DAG 'DAG:us_debt_by_president_dag' as access control is unset.
+2024-06-18 16:36:17,784 - airflow.models.dag - INFO - Sync 1 DAGs
+2024-06-18 16:36:17,804 - airflow.models.dag - INFO - Setting next_dagrun for us_debt_by_president_dag to 2025-01-01 00:00:00+00:00, run_after=2026-01-01 00:00:00+00:00
+2024-06-18 16:36:17,829 - airflow.settings - DEBUG - Disposing DB connection pool (PID 20393)
+2024-06-18 16:36:17,830 - airflow.settings - DEBUG - Disposing DB connection pool (PID 20393)
+2024-06-18 16:39:37,314 - cron_descriptor.GetText - DEBUG - /Users/jbshome/Desktop/us_debt_etl_pipeline/debt_env/lib/python3.12/site-packages/cron_descriptor/locale/en_US.mo Loaded
+2024-06-18 16:39:37,319 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.fiscaldata.treasury.gov:443
+2024-06-18 16:39:37,603 - urllib3.connectionpool - DEBUG - https://api.fiscaldata.treasury.gov:443 "GET /services/api/fiscal_service/v2/accounting/od/debt_outstanding?fields=record_fiscal_year,%20debt_outstanding_amt&sort=-record_fiscal_year&format=json&page%5Bnumber%5D=1&page%5Bsize%5D=235 HTTP/1.1" 200 4289
+2024-06-18 16:39:37,606 - root - INFO - Data extracted successfully
+2024-06-18 16:39:37,611 - root - INFO - President column added to DataFrame
+2024-06-18 16:39:37,613 - root - INFO - Data transformed successfully
+2024-06-18 16:39:37,618 - root - INFO - Data saved to csv successfully
+2024-06-18 16:39:37,620 - cron_descriptor.GetText - DEBUG - /Users/jbshome/Desktop/us_debt_etl_pipeline/debt_env/lib/python3.12/site-packages/cron_descriptor/locale/en_US.mo Loaded
+2024-06-18 16:39:37,625 - airflow.models.dagbag.DagBag - DEBUG - Loaded DAG <DAG: us_debt_by_president_dag>
+2024-06-18 16:39:37,635 - airflow.models.dagbag.DagBag - DEBUG - Running dagbag.sync_to_db with retries. Try 1 of 3
+2024-06-18 16:39:37,636 - airflow.models.dagbag.DagBag - DEBUG - Calling the DAG.bulk_sync_to_db method
+2024-06-18 16:39:37,640 - airflow.models.serialized_dag - DEBUG - Checking if DAG (us_debt_by_president_dag) changed
+2024-06-18 16:39:37,784 - airflow.models.serialized_dag - DEBUG - Writing Serialized DAG: us_debt_by_president_dag to the DB
+2024-06-18 16:39:37,787 - airflow.models.serialized_dag - DEBUG - DAG: us_debt_by_president_dag written to the DB
+2024-06-18 16:39:37,788 - airflow.models.dagbag.DagBag - DEBUG - Syncing DAG permissions: us_debt_by_president_dag to the DB
+2024-06-18 16:39:37,906 - airflow.www.security_appless.ApplessAirflowSecurityManager - DEBUG - Not syncing DAG-level permissions for DAG 'DAG:us_debt_by_president_dag' as access control is unset.
+2024-06-18 16:39:37,907 - airflow.models.dag - INFO - Sync 1 DAGs
+2024-06-18 16:39:37,928 - airflow.models.dag - INFO - Setting next_dagrun for us_debt_by_president_dag to 2025-01-01 00:00:00+00:00, run_after=2026-01-01 00:00:00+00:00
+2024-06-18 16:39:37,955 - airflow.settings - DEBUG - Disposing DB connection pool (PID 20555)
+2024-06-18 16:39:37,955 - airflow.settings - DEBUG - Disposing DB connection pool (PID 20555)
+2024-06-18 16:42:35,588 - cron_descriptor.GetText - DEBUG - /Users/jbshome/Desktop/us_debt_etl_pipeline/debt_env/lib/python3.12/site-packages/cron_descriptor/locale/en_US.mo Loaded
+2024-06-18 16:42:35,595 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.fiscaldata.treasury.gov:443
+2024-06-18 16:42:35,886 - urllib3.connectionpool - DEBUG - https://api.fiscaldata.treasury.gov:443 "GET /services/api/fiscal_service/v2/accounting/od/debt_outstanding?fields=record_fiscal_year,%20debt_outstanding_amt&sort=-record_fiscal_year&format=json&page%5Bnumber%5D=1&page%5Bsize%5D=235 HTTP/1.1" 200 4289
+2024-06-18 16:42:35,889 - root - INFO - Data extracted successfully
+2024-06-18 16:42:35,899 - root - INFO - President column added to DataFrame
+2024-06-18 16:42:35,901 - root - INFO - Data transformed successfully
+2024-06-18 16:42:35,907 - root - INFO - Data saved to csv successfully
+2024-06-18 16:42:35,910 - cron_descriptor.GetText - DEBUG - /Users/jbshome/Desktop/us_debt_etl_pipeline/debt_env/lib/python3.12/site-packages/cron_descriptor/locale/en_US.mo Loaded
+2024-06-18 16:42:35,918 - airflow.models.dagbag.DagBag - DEBUG - Loaded DAG <DAG: us_debt_by_president_dag>
+2024-06-18 16:42:35,933 - airflow.models.dagbag.DagBag - DEBUG - Running dagbag.sync_to_db with retries. Try 1 of 3
+2024-06-18 16:42:35,934 - airflow.models.dagbag.DagBag - DEBUG - Calling the DAG.bulk_sync_to_db method
+2024-06-18 16:42:35,942 - airflow.models.serialized_dag - DEBUG - Checking if DAG (us_debt_by_president_dag) changed
+2024-06-18 16:42:36,324 - airflow.models.serialized_dag - DEBUG - Writing Serialized DAG: us_debt_by_president_dag to the DB
+2024-06-18 16:42:36,336 - airflow.models.serialized_dag - DEBUG - DAG: us_debt_by_president_dag written to the DB
+2024-06-18 16:42:36,339 - airflow.models.dagbag.DagBag - DEBUG - Syncing DAG permissions: us_debt_by_president_dag to the DB
+2024-06-18 16:42:36,629 - airflow.www.security_appless.ApplessAirflowSecurityManager - DEBUG - Not syncing DAG-level permissions for DAG 'DAG:us_debt_by_president_dag' as access control is unset.
+2024-06-18 16:42:36,630 - airflow.models.dag - INFO - Sync 1 DAGs
+2024-06-18 16:42:36,673 - airflow.models.dag - INFO - Setting next_dagrun for us_debt_by_president_dag to 2025-01-01 00:00:00+00:00, run_after=2026-01-01 00:00:00+00:00
+2024-06-18 16:42:36,727 - airflow.settings - DEBUG - Disposing DB connection pool (PID 21171)
+2024-06-18 16:42:36,728 - airflow.settings - DEBUG - Disposing DB connection pool (PID 21171)
+2024-06-18 16:45:34,713 - cron_descriptor.GetText - DEBUG - /Users/jbshome/Desktop/us_debt_etl_pipeline/debt_env/lib/python3.12/site-packages/cron_descriptor/locale/en_US.mo Loaded
+2024-06-18 16:45:34,717 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.fiscaldata.treasury.gov:443
+2024-06-18 16:45:35,035 - urllib3.connectionpool - DEBUG - https://api.fiscaldata.treasury.gov:443 "GET /services/api/fiscal_service/v2/accounting/od/debt_outstanding?fields=record_fiscal_year,%20debt_outstanding_amt&sort=-record_fiscal_year&format=json&page%5Bnumber%5D=1&page%5Bsize%5D=235 HTTP/1.1" 200 4289
+2024-06-18 16:45:35,038 - root - INFO - Data extracted successfully
+2024-06-18 16:45:35,042 - root - INFO - President column added to DataFrame
+2024-06-18 16:45:35,044 - root - INFO - Data transformed successfully
+2024-06-18 16:45:35,047 - root - INFO - Data saved to csv successfully
+2024-06-18 16:45:35,049 - cron_descriptor.GetText - DEBUG - /Users/jbshome/Desktop/us_debt_etl_pipeline/debt_env/lib/python3.12/site-packages/cron_descriptor/locale/en_US.mo Loaded
+2024-06-18 16:45:35,053 - airflow.models.dagbag.DagBag - DEBUG - Loaded DAG <DAG: us_debt_by_president_dag>
+2024-06-18 16:45:35,064 - airflow.models.dagbag.DagBag - DEBUG - Running dagbag.sync_to_db with retries. Try 1 of 3
+2024-06-18 16:45:35,065 - airflow.models.dagbag.DagBag - DEBUG - Calling the DAG.bulk_sync_to_db method
+2024-06-18 16:45:35,069 - airflow.models.serialized_dag - DEBUG - Checking if DAG (us_debt_by_president_dag) changed
+2024-06-18 16:45:35,203 - airflow.models.serialized_dag - DEBUG - Serialized DAG (us_debt_by_president_dag) is unchanged. Skipping writing to DB
+2024-06-18 16:45:35,203 - airflow.models.dag - INFO - Sync 1 DAGs
+2024-06-18 16:45:35,225 - airflow.models.dag - INFO - Setting next_dagrun for us_debt_by_president_dag to 2025-01-01 00:00:00+00:00, run_after=2026-01-01 00:00:00+00:00
+2024-06-18 16:45:35,247 - airflow.settings - DEBUG - Disposing DB connection pool (PID 21496)
+2024-06-18 16:45:35,247 - airflow.settings - DEBUG - Disposing DB connection pool (PID 21496)
+2024-06-18 16:48:46,909 - cron_descriptor.GetText - DEBUG - /Users/jbshome/Desktop/us_debt_etl_pipeline/debt_env/lib/python3.12/site-packages/cron_descriptor/locale/en_US.mo Loaded
+2024-06-18 16:48:46,914 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.fiscaldata.treasury.gov:443
+2024-06-18 16:48:47,182 - urllib3.connectionpool - DEBUG - https://api.fiscaldata.treasury.gov:443 "GET /services/api/fiscal_service/v2/accounting/od/debt_outstanding?fields=record_fiscal_year,%20debt_outstanding_amt&sort=-record_fiscal_year&format=json&page%5Bnumber%5D=1&page%5Bsize%5D=235 HTTP/1.1" 200 4289
+2024-06-18 16:48:47,185 - root - INFO - Data extracted successfully
+2024-06-18 16:48:47,191 - root - INFO - President column added to DataFrame
+2024-06-18 16:48:47,194 - root - INFO - Data transformed successfully
+2024-06-18 16:48:47,198 - root - INFO - Data saved to csv successfully
+2024-06-18 16:48:47,200 - cron_descriptor.GetText - DEBUG - /Users/jbshome/Desktop/us_debt_etl_pipeline/debt_env/lib/python3.12/site-packages/cron_descriptor/locale/en_US.mo Loaded
+2024-06-18 16:48:47,206 - airflow.models.dagbag.DagBag - DEBUG - Loaded DAG <DAG: us_debt_by_president_dag>
+2024-06-18 16:48:47,225 - airflow.models.dagbag.DagBag - DEBUG - Running dagbag.sync_to_db with retries. Try 1 of 3
+2024-06-18 16:48:47,226 - airflow.models.dagbag.DagBag - DEBUG - Calling the DAG.bulk_sync_to_db method
+2024-06-18 16:48:47,234 - airflow.models.serialized_dag - DEBUG - Checking if DAG (us_debt_by_president_dag) changed
+2024-06-18 16:48:47,378 - airflow.models.serialized_dag - DEBUG - Serialized DAG (us_debt_by_president_dag) is unchanged. Skipping writing to DB
+2024-06-18 16:48:47,378 - airflow.models.dag - INFO - Sync 1 DAGs
+2024-06-18 16:48:47,401 - airflow.models.dag - INFO - Setting next_dagrun for us_debt_by_president_dag to 2025-01-01 00:00:00+00:00, run_after=2026-01-01 00:00:00+00:00
+2024-06-18 16:48:47,423 - airflow.settings - DEBUG - Disposing DB connection pool (PID 21678)
+2024-06-18 16:48:47,423 - airflow.settings - DEBUG - Disposing DB connection pool (PID 21678)
+2024-06-18 16:51:52,363 - cron_descriptor.GetText - DEBUG - /Users/jbshome/Desktop/us_debt_etl_pipeline/debt_env/lib/python3.12/site-packages/cron_descriptor/locale/en_US.mo Loaded
+2024-06-18 16:51:52,367 - airflow.models.dagbag.DagBag - ERROR - Failed to import: /Users/jbshome/Desktop/us_debt_etl_pipeline/airflow_home/dags/us_debt_by_president_dag.py
+Traceback (most recent call last):
+  File "/Users/jbshome/Desktop/us_debt_etl_pipeline/debt_env/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/Users/jbshome/Desktop/us_debt_etl_pipeline/airflow_home/dags/us_debt_by_president_dag.py", line 161, in <module>
+    op_args=[df],
+             ^^
+NameError: name 'df' is not defined
+2024-06-18 16:51:52,556 - airflow.settings - DEBUG - Disposing DB connection pool (PID 21849)
+2024-06-18 16:51:52,557 - airflow.settings - DEBUG - Disposing DB connection pool (PID 21849)
+2024-06-18 16:54:53,918 - cron_descriptor.GetText - DEBUG - /Users/jbshome/Desktop/us_debt_etl_pipeline/debt_env/lib/python3.12/site-packages/cron_descriptor/locale/en_US.mo Loaded
+2024-06-18 16:54:53,921 - airflow.models.dagbag.DagBag - ERROR - Failed to import: /Users/jbshome/Desktop/us_debt_etl_pipeline/airflow_home/dags/us_debt_by_president_dag.py
+Traceback (most recent call last):
+  File "/Users/jbshome/Desktop/us_debt_etl_pipeline/debt_env/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/Users/jbshome/Desktop/us_debt_etl_pipeline/airflow_home/dags/us_debt_by_president_dag.py", line 161, in <module>
+    op_args=[df],
+             ^^
+NameError: name 'df' is not defined
+2024-06-18 16:54:54,115 - airflow.settings - DEBUG - Disposing DB connection pool (PID 21997)
+2024-06-18 16:54:54,116 - airflow.settings - DEBUG - Disposing DB connection pool (PID 21997)
+2024-06-18 16:56:50,842 - cron_descriptor.GetText - DEBUG - /Users/jbshome/Desktop/us_debt_etl_pipeline/debt_env/lib/python3.12/site-packages/cron_descriptor/locale/en_US.mo Loaded
+2024-06-18 16:56:50,936 - airflow.settings - DEBUG - Disposing DB connection pool (PID 22330)
+2024-06-18 17:05:32,117 - airflow.models.dagbag.DagBag - ERROR - Failed to import: /Users/jbshome/Desktop/us_debt_etl_pipeline/airflow_home/dags/us_debt_by_president_dag.py
+Traceback (most recent call last):
+  File "/Users/jbshome/Desktop/us_debt_etl_pipeline/debt_env/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/Users/jbshome/Desktop/us_debt_etl_pipeline/airflow_home/dags/us_debt_by_president_dag.py", line 85, in <module>
+    start_date=pendulum.today('UTC').add(days=-1,),
+               ^^^^^^^^
+NameError: name 'pendulum' is not defined
+2024-06-18 17:05:32,265 - airflow.settings - DEBUG - Disposing DB connection pool (PID 22937)
+2024-06-18 17:05:32,266 - airflow.settings - DEBUG - Disposing DB connection pool (PID 22937)
+2024-06-18 17:09:23,741 - cron_descriptor.GetText - DEBUG - /Users/jbshome/Desktop/us_debt_etl_pipeline/debt_env/lib/python3.12/site-packages/cron_descriptor/locale/en_US.mo Loaded
+2024-06-18 17:09:23,746 - cron_descriptor.GetText - DEBUG - /Users/jbshome/Desktop/us_debt_etl_pipeline/debt_env/lib/python3.12/site-packages/cron_descriptor/locale/en_US.mo Loaded
+2024-06-18 17:09:23,752 - airflow.models.dagbag.DagBag - DEBUG - Loaded DAG <DAG: us_debt_by_president_dag>
+2024-06-18 17:09:23,775 - airflow.models.dagbag.DagBag - DEBUG - Running dagbag.sync_to_db with retries. Try 1 of 3
+2024-06-18 17:09:23,776 - airflow.models.dagbag.DagBag - DEBUG - Calling the DAG.bulk_sync_to_db method
+2024-06-18 17:09:23,785 - airflow.models.serialized_dag - DEBUG - Checking if DAG (us_debt_by_president_dag) changed
+2024-06-18 17:09:24,011 - airflow.models.serialized_dag - DEBUG - Writing Serialized DAG: us_debt_by_president_dag to the DB
+2024-06-18 17:09:24,018 - airflow.models.serialized_dag - DEBUG - DAG: us_debt_by_president_dag written to the DB
+2024-06-18 17:09:24,018 - airflow.models.dagbag.DagBag - DEBUG - Syncing DAG permissions: us_debt_by_president_dag to the DB
+2024-06-18 17:09:24,201 - airflow.www.security_appless.ApplessAirflowSecurityManager - DEBUG - Not syncing DAG-level permissions for DAG 'DAG:us_debt_by_president_dag' as access control is unset.
+2024-06-18 17:09:24,202 - airflow.models.dag - INFO - Sync 1 DAGs
+2024-06-18 17:09:24,240 - airflow.models.dag - INFO - Setting next_dagrun for us_debt_by_president_dag to 2025-01-01 00:00:00+00:00, run_after=2026-01-01 00:00:00+00:00
+2024-06-18 17:09:24,292 - airflow.settings - DEBUG - Disposing DB connection pool (PID 23742)
+2024-06-18 17:09:24,293 - airflow.settings - DEBUG - Disposing DB connection pool (PID 23742)
+2024-06-18 17:14:05,347 - cron_descriptor.GetText - DEBUG - /Users/jbshome/Desktop/us_debt_etl_pipeline/debt_env/lib/python3.12/site-packages/cron_descriptor/locale/en_US.mo Loaded
+2024-06-18 17:14:05,380 - cron_descriptor.GetText - DEBUG - /Users/jbshome/Desktop/us_debt_etl_pipeline/debt_env/lib/python3.12/site-packages/cron_descriptor/locale/en_US.mo Loaded
+2024-06-18 17:14:05,399 - airflow.models.dagbag.DagBag - DEBUG - Loaded DAG <DAG: us_debt_by_president_dag>
+2024-06-18 17:14:05,433 - airflow.models.dagbag.DagBag - DEBUG - Running dagbag.sync_to_db with retries. Try 1 of 3
+2024-06-18 17:14:05,437 - airflow.models.dagbag.DagBag - DEBUG - Calling the DAG.bulk_sync_to_db method
+2024-06-18 17:14:05,453 - airflow.models.serialized_dag - DEBUG - Checking if DAG (us_debt_by_president_dag) changed
+2024-06-18 17:14:06,118 - airflow.models.serialized_dag - DEBUG - Serialized DAG (us_debt_by_president_dag) is unchanged. Skipping writing to DB
+2024-06-18 17:14:06,119 - airflow.models.dag - INFO - Sync 1 DAGs
+2024-06-18 17:14:06,251 - airflow.models.dag - INFO - Setting next_dagrun for us_debt_by_president_dag to 2025-01-01 00:00:00+00:00, run_after=2026-01-01 00:00:00+00:00
+2024-06-18 17:14:06,445 - airflow.settings - DEBUG - Disposing DB connection pool (PID 24045)
+2024-06-18 17:14:06,447 - airflow.settings - DEBUG - Disposing DB connection pool (PID 24045)
+2024-06-18 17:19:43,079 - cron_descriptor.GetText - DEBUG - /Users/jbshome/Desktop/us_debt_etl_pipeline/debt_env/lib/python3.12/site-packages/cron_descriptor/locale/en_US.mo Loaded
+2024-06-18 17:19:43,084 - cron_descriptor.GetText - DEBUG - /Users/jbshome/Desktop/us_debt_etl_pipeline/debt_env/lib/python3.12/site-packages/cron_descriptor/locale/en_US.mo Loaded
+2024-06-18 17:19:43,092 - airflow.models.dagbag.DagBag - DEBUG - Loaded DAG <DAG: us_debt_by_president_dag>
+2024-06-18 17:19:43,109 - airflow.models.dagbag.DagBag - DEBUG - Running dagbag.sync_to_db with retries. Try 1 of 3
+2024-06-18 17:19:43,110 - airflow.models.dagbag.DagBag - DEBUG - Calling the DAG.bulk_sync_to_db method
+2024-06-18 17:19:43,118 - airflow.models.serialized_dag - DEBUG - Checking if DAG (us_debt_by_president_dag) changed
+2024-06-18 17:19:43,338 - airflow.models.serialized_dag - DEBUG - Serialized DAG (us_debt_by_president_dag) is unchanged. Skipping writing to DB
+2024-06-18 17:19:43,339 - airflow.models.dag - INFO - Sync 1 DAGs
+2024-06-18 17:19:43,373 - airflow.models.dag - INFO - Setting next_dagrun for us_debt_by_president_dag to 2025-01-01 00:00:00+00:00, run_after=2026-01-01 00:00:00+00:00
+2024-06-18 17:19:43,414 - airflow.settings - DEBUG - Disposing DB connection pool (PID 24405)
+2024-06-18 17:19:43,415 - airflow.settings - DEBUG - Disposing DB connection pool (PID 24405)
+2024-06-18 17:23:44,432 - cron_descriptor.GetText - DEBUG - /Users/jbshome/Desktop/us_debt_etl_pipeline/debt_env/lib/python3.12/site-packages/cron_descriptor/locale/en_US.mo Loaded
+2024-06-18 17:23:44,438 - cron_descriptor.GetText - DEBUG - /Users/jbshome/Desktop/us_debt_etl_pipeline/debt_env/lib/python3.12/site-packages/cron_descriptor/locale/en_US.mo Loaded
+2024-06-18 17:23:44,445 - airflow.models.dagbag.DagBag - DEBUG - Loaded DAG <DAG: us_debt_by_president_dag>
+2024-06-18 17:23:44,459 - airflow.models.dagbag.DagBag - DEBUG - Running dagbag.sync_to_db with retries. Try 1 of 3
+2024-06-18 17:23:44,460 - airflow.models.dagbag.DagBag - DEBUG - Calling the DAG.bulk_sync_to_db method
+2024-06-18 17:23:44,465 - airflow.models.serialized_dag - DEBUG - Checking if DAG (us_debt_by_president_dag) changed
+2024-06-18 17:23:44,618 - airflow.models.serialized_dag - DEBUG - Serialized DAG (us_debt_by_president_dag) is unchanged. Skipping writing to DB
+2024-06-18 17:23:44,619 - airflow.models.dag - INFO - Sync 1 DAGs
+2024-06-18 17:23:44,655 - airflow.models.dag - INFO - Setting next_dagrun for us_debt_by_president_dag to 2025-01-01 00:00:00+00:00, run_after=2026-01-01 00:00:00+00:00
+2024-06-18 17:23:44,695 - airflow.settings - DEBUG - Disposing DB connection pool (PID 24719)
+2024-06-18 17:23:44,696 - airflow.settings - DEBUG - Disposing DB connection pool (PID 24719)
+2024-06-18 17:28:28,606 - cron_descriptor.GetText - DEBUG - /Users/jbshome/Desktop/us_debt_etl_pipeline/debt_env/lib/python3.12/site-packages/cron_descriptor/locale/en_US.mo Loaded
+2024-06-18 17:28:28,611 - cron_descriptor.GetText - DEBUG - /Users/jbshome/Desktop/us_debt_etl_pipeline/debt_env/lib/python3.12/site-packages/cron_descriptor/locale/en_US.mo Loaded
+2024-06-18 17:28:28,619 - airflow.models.dagbag.DagBag - DEBUG - Loaded DAG <DAG: us_debt_by_president_dag>
+2024-06-18 17:28:28,635 - airflow.models.dagbag.DagBag - DEBUG - Running dagbag.sync_to_db with retries. Try 1 of 3
+2024-06-18 17:28:28,636 - airflow.models.dagbag.DagBag - DEBUG - Calling the DAG.bulk_sync_to_db method
+2024-06-18 17:28:28,645 - airflow.models.serialized_dag - DEBUG - Checking if DAG (us_debt_by_president_dag) changed
+2024-06-18 17:28:28,839 - airflow.models.serialized_dag - DEBUG - Serialized DAG (us_debt_by_president_dag) is unchanged. Skipping writing to DB
+2024-06-18 17:28:28,840 - airflow.models.dag - INFO - Sync 1 DAGs
+2024-06-18 17:28:28,875 - airflow.models.dag - INFO - Setting next_dagrun for us_debt_by_president_dag to 2025-01-01 00:00:00+00:00, run_after=2026-01-01 00:00:00+00:00
+2024-06-18 17:28:28,921 - airflow.settings - DEBUG - Disposing DB connection pool (PID 25017)
+2024-06-18 17:28:28,922 - airflow.settings - DEBUG - Disposing DB connection pool (PID 25017)
+2024-06-18 17:32:51,433 - cron_descriptor.GetText - DEBUG - /Users/jbshome/Desktop/us_debt_etl_pipeline/debt_env/lib/python3.12/site-packages/cron_descriptor/locale/en_US.mo Loaded
+2024-06-18 17:32:51,438 - cron_descriptor.GetText - DEBUG - /Users/jbshome/Desktop/us_debt_etl_pipeline/debt_env/lib/python3.12/site-packages/cron_descriptor/locale/en_US.mo Loaded
+2024-06-18 17:32:51,444 - airflow.models.dagbag.DagBag - DEBUG - Loaded DAG <DAG: us_debt_by_president_dag>
+2024-06-18 17:32:51,453 - airflow.models.dagbag.DagBag - DEBUG - Running dagbag.sync_to_db with retries. Try 1 of 3
+2024-06-18 17:32:51,454 - airflow.models.dagbag.DagBag - DEBUG - Calling the DAG.bulk_sync_to_db method
+2024-06-18 17:32:51,462 - airflow.models.serialized_dag - DEBUG - Checking if DAG (us_debt_by_president_dag) changed
+2024-06-18 17:32:51,620 - airflow.models.serialized_dag - DEBUG - Serialized DAG (us_debt_by_president_dag) is unchanged. Skipping writing to DB
+2024-06-18 17:32:51,620 - airflow.models.dag - INFO - Sync 1 DAGs
+2024-06-18 17:32:51,650 - airflow.models.dag - INFO - Setting next_dagrun for us_debt_by_president_dag to 2025-01-01 00:00:00+00:00, run_after=2026-01-01 00:00:00+00:00
+2024-06-18 17:32:51,684 - airflow.settings - DEBUG - Disposing DB connection pool (PID 25337)
+2024-06-18 17:32:51,685 - airflow.settings - DEBUG - Disposing DB connection pool (PID 25337)
+2024-06-18 17:39:28,942 - cron_descriptor.GetText - DEBUG - /Users/jbshome/Desktop/us_debt_etl_pipeline/debt_env/lib/python3.12/site-packages/cron_descriptor/locale/en_US.mo Loaded
+2024-06-18 17:39:28,946 - cron_descriptor.GetText - DEBUG - /Users/jbshome/Desktop/us_debt_etl_pipeline/debt_env/lib/python3.12/site-packages/cron_descriptor/locale/en_US.mo Loaded
+2024-06-18 17:39:28,981 - airflow.models.dagbag.DagBag - DEBUG - Loaded DAG <DAG: us_debt_by_president_dag>
+2024-06-18 17:39:29,039 - airflow.models.dagbag.DagBag - DEBUG - Running dagbag.sync_to_db with retries. Try 1 of 3
+2024-06-18 17:39:29,040 - airflow.models.dagbag.DagBag - DEBUG - Calling the DAG.bulk_sync_to_db method
+2024-06-18 17:39:29,053 - airflow.models.serialized_dag - DEBUG - Checking if DAG (us_debt_by_president_dag) changed
+2024-06-18 17:39:29,501 - airflow.models.serialized_dag - DEBUG - Serialized DAG (us_debt_by_president_dag) is unchanged. Skipping writing to DB
+2024-06-18 17:39:29,502 - airflow.models.dag - INFO - Sync 1 DAGs
+2024-06-18 17:39:29,583 - airflow.models.dag - INFO - Setting next_dagrun for us_debt_by_president_dag to 2025-01-01 00:00:00+00:00, run_after=2026-01-01 00:00:00+00:00
+2024-06-18 17:39:29,647 - airflow.settings - DEBUG - Disposing DB connection pool (PID 26358)
+2024-06-18 17:39:29,648 - airflow.settings - DEBUG - Disposing DB connection pool (PID 26358)
+2024-06-18 17:46:51,929 - cron_descriptor.GetText - DEBUG - /Users/jbshome/Desktop/us_debt_etl_pipeline/debt_env/lib/python3.12/site-packages/cron_descriptor/locale/en_US.mo Loaded
+2024-06-18 17:46:52,060 - airflow.settings - DEBUG - Disposing DB connection pool (PID 27444)
+2024-06-18 17:50:32,892 - cron_descriptor.GetText - DEBUG - /Users/jbshome/Desktop/us_debt_etl_pipeline/debt_env/lib/python3.12/site-packages/cron_descriptor/locale/en_US.mo Loaded
+2024-06-18 17:50:32,899 - cron_descriptor.GetText - DEBUG - /Users/jbshome/Desktop/us_debt_etl_pipeline/debt_env/lib/python3.12/site-packages/cron_descriptor/locale/en_US.mo Loaded
+2024-06-18 17:50:32,906 - airflow.models.dagbag.DagBag - DEBUG - Loaded DAG <DAG: us_debt_by_president_dag>
+2024-06-18 17:50:32,923 - airflow.models.dagbag.DagBag - DEBUG - Running dagbag.sync_to_db with retries. Try 1 of 3
+2024-06-18 17:50:32,924 - airflow.models.dagbag.DagBag - DEBUG - Calling the DAG.bulk_sync_to_db method
+2024-06-18 17:50:32,932 - airflow.models.serialized_dag - DEBUG - Checking if DAG (us_debt_by_president_dag) changed
+2024-06-18 17:50:33,128 - airflow.models.serialized_dag - DEBUG - Writing Serialized DAG: us_debt_by_president_dag to the DB
+2024-06-18 17:50:33,135 - airflow.models.serialized_dag - DEBUG - DAG: us_debt_by_president_dag written to the DB
+2024-06-18 17:50:33,136 - airflow.models.dagbag.DagBag - DEBUG - Syncing DAG permissions: us_debt_by_president_dag to the DB
+2024-06-18 17:50:33,368 - airflow.www.security_appless.ApplessAirflowSecurityManager - DEBUG - Not syncing DAG-level permissions for DAG 'DAG:us_debt_by_president_dag' as access control is unset.
+2024-06-18 17:50:33,369 - airflow.models.dag - INFO - Sync 1 DAGs
+2024-06-18 17:50:33,412 - airflow.models.dag - INFO - Setting next_dagrun for us_debt_by_president_dag to 2025-01-01 00:00:00+00:00, run_after=2026-01-01 00:00:00+00:00
+2024-06-18 17:50:33,503 - airflow.settings - DEBUG - Disposing DB connection pool (PID 27855)
+2024-06-18 17:50:33,504 - airflow.settings - DEBUG - Disposing DB connection pool (PID 27855)
