@@ -7,6 +7,8 @@ import logging.handlers
 import requests
 import pendulum
 import pandas as pd
+import matplotlib.pyplot as plt
+import numpy as np
 from datetime import timedelta
 
 # Add the directory containing my modules to the python path
