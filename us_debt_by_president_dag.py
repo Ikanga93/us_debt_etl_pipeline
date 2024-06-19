@@ -123,4 +123,4 @@ def load_task(df, csv_file):
     return df
 
 # Call the load_task function
-load_task(cleaned_df, us_debt_csv)
+print(load_task(cleaned_df, us_debt_csv))

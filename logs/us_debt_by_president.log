@@ -322,3 +322,21 @@ NameError: name 'pendulum' is not defined
 2024-06-18 18:11:08,731 - root - INFO - President column added to DataFrame
 2024-06-18 18:11:08,744 - root - INFO - Data transformed successfully
 2024-06-18 18:11:08,775 - root - INFO - Data saved to csv successfully
+2024-06-18 19:51:54,179 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.fiscaldata.treasury.gov:443
+2024-06-18 19:51:55,166 - urllib3.connectionpool - DEBUG - https://api.fiscaldata.treasury.gov:443 "GET /services/api/fiscal_service/v2/accounting/od/debt_outstanding?fields=record_fiscal_year,%20debt_outstanding_amt&sort=-record_fiscal_year&format=json&page%5Bnumber%5D=1&page%5Bsize%5D=235 HTTP/1.1" 200 4289
+2024-06-18 19:51:55,169 - root - INFO - Data extracted successfully
+2024-06-18 19:51:55,185 - root - INFO - President column added to DataFrame
+2024-06-18 19:51:55,188 - root - INFO - Data transformed successfully
+2024-06-18 19:51:55,194 - root - INFO - Data saved to csv successfully
+2024-06-18 19:52:18,728 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.fiscaldata.treasury.gov:443
+2024-06-18 19:52:20,420 - urllib3.connectionpool - DEBUG - https://api.fiscaldata.treasury.gov:443 "GET /services/api/fiscal_service/v2/accounting/od/debt_outstanding?fields=record_fiscal_year,%20debt_outstanding_amt&sort=-record_fiscal_year&format=json&page%5Bnumber%5D=1&page%5Bsize%5D=235 HTTP/1.1" 200 4289
+2024-06-18 19:52:20,423 - root - INFO - Data extracted successfully
+2024-06-18 19:52:20,428 - root - INFO - President column added to DataFrame
+2024-06-18 19:52:20,430 - root - INFO - Data transformed successfully
+2024-06-18 19:52:20,440 - root - INFO - Data saved to csv successfully
+2024-06-18 20:28:07,524 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.fiscaldata.treasury.gov:443
+2024-06-18 20:28:08,175 - urllib3.connectionpool - DEBUG - https://api.fiscaldata.treasury.gov:443 "GET /services/api/fiscal_service/v2/accounting/od/debt_outstanding?fields=record_fiscal_year,%20debt_outstanding_amt&sort=-record_fiscal_year&format=json&page%5Bnumber%5D=1&page%5Bsize%5D=235 HTTP/1.1" 200 4289
+2024-06-18 20:28:08,183 - root - INFO - Data extracted successfully
+2024-06-18 20:28:08,193 - root - INFO - President column added to DataFrame
+2024-06-18 20:28:08,202 - root - INFO - Data transformed successfully
+2024-06-18 20:28:08,225 - root - INFO - Data saved to csv successfully
