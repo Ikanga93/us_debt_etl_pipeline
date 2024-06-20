@@ -346,3 +346,9 @@ NameError: name 'pendulum' is not defined
 2024-06-18 21:25:25,446 - root - INFO - President column added to DataFrame
 2024-06-18 21:25:25,449 - root - INFO - Data transformed successfully
 2024-06-18 21:25:25,477 - root - INFO - Data saved to csv successfully
+2024-06-20 17:54:18,366 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.fiscaldata.treasury.gov:443
+2024-06-20 17:54:19,050 - urllib3.connectionpool - DEBUG - https://api.fiscaldata.treasury.gov:443 "GET /services/api/fiscal_service/v2/accounting/od/debt_outstanding?fields=record_fiscal_year,%20debt_outstanding_amt&sort=-record_fiscal_year&format=json&page%5Bnumber%5D=1&page%5Bsize%5D=235 HTTP/1.1" 200 4289
+2024-06-20 17:54:19,104 - root - INFO - Data extracted successfully
+2024-06-20 17:54:19,138 - root - INFO - President column added to DataFrame
+2024-06-20 17:54:19,152 - root - INFO - Data transformed successfully
+2024-06-20 17:54:19,170 - root - INFO - Data saved to csv successfully

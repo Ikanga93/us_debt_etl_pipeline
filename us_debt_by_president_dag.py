@@ -61,8 +61,7 @@ url = 'https://api.fiscaldata.treasury.gov/services/api/fiscal_service/v2/accoun
 # Path to csv file
 us_debt_csv = '/Users/jbshome/Desktop/us_debt_etl_pipeline/csv_files/us_debt_by_president.csv'
 
-# Define the first task in the DAG.
-# This task will extract data from an api
+#Function to extract the data
 def extract_task(api_url):
     try: 
         # Get the data from the api
@@ -84,43 +83,50 @@ def extract_task(api_url):
         logging.error(f'Error extracting data: {str(e)}')
         return None
 
-# Call the extract_task function
+# Call the extract function
 df = extract_task(url)
 
 # Function to transform the data
 def transform_task(data):
 # Transform the data
+    try:
     # Adding a new column to the DataFrame from another python file
-    if data is not None:
-        # Add the president column to the DataFrame
-        data['president'] = data['record_fiscal_year'].astype(int).map(year_to_president)
-        logging.info('President column added to DataFrame')
-    
-    else:
-        logging.error('Could not add president column to DataFrame')
+        if data is not None:
+            # Add the president column to the DataFrame
+            data['president'] = data['record_fiscal_year'].astype(int).map(year_to_president)
+            logging.info('President column added to DataFrame')
+        
+        else:
+            logging.error('Could not add president column to DataFrame')
 
-    # Change the president data to title case
-    data['president'] = data['president'].str.title()
+        # Change the president data to title case
+        data['president'] = data['president'].str.title()
 
-    # Also I need to conver the record_fiscal_year and debt_outstanding_amt to appropriate data types
-    # Convert the record_fiscal_year to int
-    data['record_fiscal_year'] = data['record_fiscal_year'].astype(int)
-     # Remove the commas from the debt_outstanding_amt and convert it to float
-    data['debt_outstanding_amt'] = data['debt_outstanding_amt'].astype(float)
+        # Also I need to conver the record_fiscal_year and debt_outstanding_amt to appropriate data types
+        # Convert the record_fiscal_year to int
+        data['record_fiscal_year'] = data['record_fiscal_year'].astype(int)
+        # Remove the commas from the debt_outstanding_amt and convert it to float
+        data['debt_outstanding_amt'] = data['debt_outstanding_amt'].astype(float)
 
-    logging.info('Data transformed successfully')
-    return data
+        logging.info('Data transformed successfully')
+        return data
+    except Exception as e:
+        logging.error(f'Error transforming data: {str(e)}')
+        return None
 
-# Call the extract_task function
+# Call the transform function
 cleaned_df = transform_task(df)
 
-# Define the third task in the DAG.
-# This task will load the data to a csv file
+# Function to load the data
 def load_task(df, csv_file):
     # Save to csv
-    df.to_csv(csv_file, index=False)
-    logging.info('Data saved to csv successfully')
-    return df
+    try:
+        df.to_csv(csv_file, index=False)
+        logging.info('Data saved to csv successfully')
+        return df
+    except Exception as e:
+        logging.error(f'Error saving data to csv: {str(e)}')
+        return None
 
 # Call the load_task function
 print(load_task(cleaned_df, us_debt_csv))
