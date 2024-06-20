@@ -59,37 +59,35 @@ logging.getLogger().addHandler(console_handler)
 # Url to fetch the data
 url = 'https://api.fiscaldata.treasury.gov/services/api/fiscal_service/v2/accounting/od/debt_outstanding?fields=record_fiscal_year, debt_outstanding_amt&sort=-record_fiscal_year&format=json&page[number]=1&page[size]=235'
 # Path to csv file
-us_debt_csv = '/Users/jbshome/Desktop/us_debt/us_debt.csv'
-
-# Url to fetch the data
-url = 'https://api.fiscaldata.treasury.gov/services/api/fiscal_service/v2/accounting/od/debt_outstanding?fields=record_fiscal_year, debt_outstanding_amt&sort=-record_fiscal_year&format=json&page[number]=1&page[size]=235'
-# Path to csv file
 us_debt_csv = '/Users/jbshome/Desktop/us_debt_etl_pipeline/csv_files/us_debt_by_president.csv'
 
 # Define the first task in the DAG.
 # This task will extract data from an api
 def extract_task(api_url):
-    # Get the data from the api
-    r = requests.get(api_url)
-    json_data = r.json()
+    try: 
+        # Get the data from the api
+        r = requests.get(api_url)
+        json_data = r.json()
 
-    # Extract the data from the json object
-    if 'data' not in json_data:
-        logging.error('No data found in json object')
+        # Extract the data from the json object
+        if 'data' not in json_data:
+            logging.error('No data found in json object')
+            return None
+        data = json_data['data']
+
+        # Create a DataFrame from the data
+        df = pd.DataFrame(data)
+
+        logging.info('Data extracted successfully')
+        return df
+    except Exception as e:
+        logging.error(f'Error extracting data: {str(e)}')
         return None
-    data = json_data['data']
-
-    # Create a DataFrame from the data
-    df = pd.DataFrame(data)
-
-    logging.info('Data extracted successfully')
-    return df
 
 # Call the extract_task function
 df = extract_task(url)
 
-# Define the second task in the DAG.
-# This task will transform the data
+# Function to transform the data
 def transform_task(data):
 # Transform the data
     # Adding a new column to the DataFrame from another python file
