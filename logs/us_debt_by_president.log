@@ -910,3 +910,15 @@ NameError: name 'pendulum' is not defined
 2024-06-21 02:37:24,289 - root - INFO - President column added to DataFrame
 2024-06-21 02:37:24,315 - root - INFO - Data transformed successfully
 2024-06-21 02:37:24,318 - root - INFO - Data saved to csv successfully
+2024-06-21 03:15:12,901 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.fiscaldata.treasury.gov:443
+2024-06-21 03:15:13,608 - urllib3.connectionpool - DEBUG - https://api.fiscaldata.treasury.gov:443 "GET /services/api/fiscal_service/v2/accounting/od/debt_outstanding?fields=record_fiscal_year,%20debt_outstanding_amt&sort=-record_fiscal_year&format=json&page%5Bnumber%5D=1&page%5Bsize%5D=235 HTTP/1.1" 200 4289
+2024-06-21 03:15:13,614 - root - INFO - Data extracted successfully
+2024-06-21 03:15:13,629 - root - INFO - President column added to DataFrame
+2024-06-21 03:15:13,703 - root - ERROR - Error transforming data: name 'StringI0' is not defined
+2024-06-21 03:15:13,704 - root - ERROR - Error saving data to csv: 'NoneType' object has no attribute 'to_csv'
+2024-06-21 03:16:55,144 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.fiscaldata.treasury.gov:443
+2024-06-21 03:16:55,850 - urllib3.connectionpool - DEBUG - https://api.fiscaldata.treasury.gov:443 "GET /services/api/fiscal_service/v2/accounting/od/debt_outstanding?fields=record_fiscal_year,%20debt_outstanding_amt&sort=-record_fiscal_year&format=json&page%5Bnumber%5D=1&page%5Bsize%5D=235 HTTP/1.1" 200 4289
+2024-06-21 03:16:55,856 - root - INFO - Data extracted successfully
+2024-06-21 03:16:55,900 - root - INFO - President column added to DataFrame
+2024-06-21 03:16:56,022 - root - ERROR - Error transforming data: initial_value must be str or None, not DataFrame
+2024-06-21 03:16:56,027 - root - ERROR - Error saving data to csv: 'NoneType' object has no attribute 'to_csv'

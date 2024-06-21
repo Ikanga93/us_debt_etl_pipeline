@@ -9,6 +9,8 @@ import pendulum
 import pandas as pd
 import matplotlib.pyplot as plt
 import numpy as np
+import csv
+from io import StringIO
 from datetime import timedelta
 
 # Add the directory containing my modules to the python path
@@ -179,7 +181,18 @@ def transform_task(data):
         # data['years_in_office'] = data['period_in_office'].apply(lambda x: int(x.split('-')[1]) - int(x.split('-')[0]) + 1)
         # Remove the total_debt column
         data = data.drop(columns='total_debt')
+        data_io = StringIO(data)
+        # Read the CSV file
+        reader = csv.reader(data_io)
+        headers = next(reader)
 
+        # Prepare the output list with the modified data
+        output = [headers]
+
+        # Process each row and add the dollar sign to the third column
+        for row in reader:
+            row[2] = f"${row[2]}"
+            output.append(row)
 
         logging.info('Data transformed successfully')
         return data
