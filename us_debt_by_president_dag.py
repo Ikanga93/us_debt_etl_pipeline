@@ -149,19 +149,37 @@ def transform_task(data):
         # Sort the data by record_fiscal_year in ascending order
         data = data.sort_values('record_fiscal_year', ascending=True, ignore_index=True)
         # Calculate the debt added by each president on top of the previous year per president
-        # Create a new column that calculate the increase per year for each persident compare to the previous year
-        # data['debt_added'] = data.groupby('president')['debt_outstanding_amt'].diff().fillna(0)
-        # Add all duplicated president names in one, add their debts in one row, and combine the years in one row as a range
-        data = data.groupby('president').agg({'record_fiscal_year': lambda x: f'{x.min()} - {x.max()}', 'debt_outstanding_amt': 'sum'}).reset_index()
+        # Create a new column that calculate the increase per year for each persident compare to the previous year and 
+        # add a dollar sign to it and still keep it as an integer
 
-        
+
+
+        # Create a new column that calculate the increase per year for each persident compare to the previous year. Add a dollar sign to the new column and still keep it as an integer
+        data['debt_added'] = data.groupby('president')['debt_outstanding_amt'].diff().fillna(0)
+        # Add the dollar sign to the debt_added column and still keep it as an integer
+        # data['debt_added'] = data['debt_added'].apply(lambda x: f'${int(x):,}' if x > 0 else f'-${int(x):,}')
+
+        # Add all duplicated president names in one, add their debts in one row, and combine the years in one row as a range
+        #data = data.groupby('president').agg({'record_fiscal_year': lambda x: f'{x.min()} - {x.max()}', 'debt_outstanding_amt': 'sum'}).reset_index()
+        # Add all duplicated president names in one, add their debts in one row, combine the years in one row as a range and create a new column that calculate the increase per year for each persident compare to the previous year
+        data = data.groupby('president').agg({'record_fiscal_year': lambda x: f'{x.min()} - {x.max()}', 'debt_outstanding_amt': 'sum', 'debt_added': 'sum'}).reset_index()
         # Sort the data by record_fiscal_year in ascending order
         data = data.sort_values('record_fiscal_year', ascending=True, ignore_index=True)
         # Show the debt_added column in whole numbers and add the dollar sign to it and still keep it as an integer and the negative sign if the debt is reduced should be before the dollar sign
         # data['debt_added'] = data['debt_added'].apply(lambda x: f'${int(x):,}' if x > 0 else f'-${int(x):,}')
-        # Add the dollar sign to the debt_outstanding_amt column and still keep it as an integer
+        # Show the debt_outstanding_amt column in whole numbers and add the dollar sign to it and still keep it as an integer
         data['debt_outstanding_amt'] = data['debt_outstanding_amt'].apply(lambda x: f'${int(x):,}')
-        
+        # Show the debt_added column in whole numbers
+        data['debt_added'] = data['debt_added'].apply(lambda x: f'{int(x):,}')
+        # Change the column names of the debt_added and debt_outstanding_amt columns
+        data = data.rename(columns={'debt_outstanding_amt': 'total_debt', 'debt_added': 'debt_added_per_president'})
+        # Change the column of fiscal year to years_in_office and president to president_name
+        data = data.rename(columns={'record_fiscal_year': 'period_in_office', 'president': 'president_name'})
+        # Add a new column to show the number of years each president spent in office
+        # data['years_in_office'] = data['period_in_office'].apply(lambda x: int(x.split('-')[1]) - int(x.split('-')[0]) + 1)
+        # Remove the total_debt column
+        data = data.drop(columns='total_debt')
+
 
         logging.info('Data transformed successfully')
         return data

@@ -53,4 +53,4 @@ president_mapping = {
 year_to_president = {}
 for years, president in president_mapping.items():
     for year in years:
-        year_to_president[year] = president
+        year_to_president[year] = president 
