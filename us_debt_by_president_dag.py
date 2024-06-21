@@ -145,12 +145,23 @@ def transform_task(data):
         pd.set_option('display.max_colwidth', None)
         # Reset the index
         # Add all duplicated president names in one, add their debts in one row, and combine the years in one row as a range
-        data = data.groupby('president').agg({'record_fiscal_year': lambda x: f'{x.min()} - {x.max()}', 'debt_outstanding_amt': 'sum'}).reset_index()
+        #data = data.groupby('president').agg({'record_fiscal_year': lambda x: f'{x.min()} - {x.max()}', 'debt_outstanding_amt': 'sum'}).reset_index()
         # Sort the data by record_fiscal_year in ascending order
         data = data.sort_values('record_fiscal_year', ascending=True, ignore_index=True)
         # Calculate the debt added by each president on top of the previous year per president
+        # Create a new column that calculate the increase per year for each persident compare to the previous year
+        # data['debt_added'] = data.groupby('president')['debt_outstanding_amt'].diff().fillna(0)
+        # Add all duplicated president names in one, add their debts in one row, and combine the years in one row as a range
+        data = data.groupby('president').agg({'record_fiscal_year': lambda x: f'{x.min()} - {x.max()}', 'debt_outstanding_amt': 'sum'}).reset_index()
 
-    
+        
+        # Sort the data by record_fiscal_year in ascending order
+        data = data.sort_values('record_fiscal_year', ascending=True, ignore_index=True)
+        # Show the debt_added column in whole numbers and add the dollar sign to it and still keep it as an integer and the negative sign if the debt is reduced should be before the dollar sign
+        # data['debt_added'] = data['debt_added'].apply(lambda x: f'${int(x):,}' if x > 0 else f'-${int(x):,}')
+        # Add the dollar sign to the debt_outstanding_amt column and still keep it as an integer
+        data['debt_outstanding_amt'] = data['debt_outstanding_amt'].apply(lambda x: f'${int(x):,}')
+        
 
         logging.info('Data transformed successfully')
         return data
