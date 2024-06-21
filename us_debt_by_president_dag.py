@@ -136,7 +136,7 @@ def transform_task(data):
         # Create a new column to show the change in debt in percentage form for each president using lambda function
         # data['debt_change_percentage'] = data.groupby('president')['debt_outstanding_amt'].pct_change().fillna(0)
         # Need to have only one name for each president
-        data['president'] = data['president'].drop_duplicates()
+        # data['president'] = data['president'].drop_duplicates()
         # data['debt_change_percentage'] = data.groupby('president')['debt_change_percentage'].transform(lambda x: x.fillna(x.mean()))
         # Want to show all data
         pd.set_option('display.max_rows', None)
@@ -144,6 +144,12 @@ def transform_task(data):
         pd.set_option('display.width', None)
         pd.set_option('display.max_colwidth', None)
         # Reset the index
+        # Add all duplicated president names in one, add their debts in one row, and combine the years in one row as a range
+        data = data.groupby('president').agg({'record_fiscal_year': lambda x: f'{x.min()} - {x.max()}', 'debt_outstanding_amt': 'sum'}).reset_index()
+        # Sort the data by record_fiscal_year in ascending order
+        data = data.sort_values('record_fiscal_year', ascending=True, ignore_index=True)
+        # Calculate the debt added by each president on top of the previous year per president
+
     
 
         logging.info('Data transformed successfully')

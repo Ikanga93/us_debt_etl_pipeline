@@ -502,3 +502,69 @@ NameError: name 'pendulum' is not defined
 2024-06-20 21:23:57,200 - root - INFO - President column added to DataFrame
 2024-06-20 21:23:57,203 - root - INFO - Data transformed successfully
 2024-06-20 21:23:57,215 - root - INFO - Data saved to csv successfully
+2024-06-20 21:27:36,999 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.fiscaldata.treasury.gov:443
+2024-06-20 21:27:37,485 - urllib3.connectionpool - DEBUG - https://api.fiscaldata.treasury.gov:443 "GET /services/api/fiscal_service/v2/accounting/od/debt_outstanding?fields=record_fiscal_year,%20debt_outstanding_amt&sort=-record_fiscal_year&format=json&page%5Bnumber%5D=1&page%5Bsize%5D=235 HTTP/1.1" 200 4289
+2024-06-20 21:27:37,505 - root - INFO - Data extracted successfully
+2024-06-20 21:27:37,518 - root - INFO - President column added to DataFrame
+2024-06-20 21:27:37,538 - root - INFO - Data transformed successfully
+2024-06-20 21:27:37,541 - root - INFO - Data saved to csv successfully
+2024-06-20 21:37:24,273 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.fiscaldata.treasury.gov:443
+2024-06-20 21:37:24,698 - urllib3.connectionpool - DEBUG - https://api.fiscaldata.treasury.gov:443 "GET /services/api/fiscal_service/v2/accounting/od/debt_outstanding?fields=record_fiscal_year,%20debt_outstanding_amt&sort=-record_fiscal_year&format=json&page%5Bnumber%5D=1&page%5Bsize%5D=235 HTTP/1.1" 200 4289
+2024-06-20 21:37:24,703 - root - INFO - Data extracted successfully
+2024-06-20 21:37:24,722 - root - INFO - President column added to DataFrame
+2024-06-20 21:37:24,757 - root - INFO - Data transformed successfully
+2024-06-20 21:37:24,769 - root - INFO - Data saved to csv successfully
+2024-06-20 21:38:18,702 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.fiscaldata.treasury.gov:443
+2024-06-20 21:38:19,463 - urllib3.connectionpool - DEBUG - https://api.fiscaldata.treasury.gov:443 "GET /services/api/fiscal_service/v2/accounting/od/debt_outstanding?fields=record_fiscal_year,%20debt_outstanding_amt&sort=-record_fiscal_year&format=json&page%5Bnumber%5D=1&page%5Bsize%5D=235 HTTP/1.1" 200 4289
+2024-06-20 21:38:19,467 - root - INFO - Data extracted successfully
+2024-06-20 21:38:19,485 - root - INFO - President column added to DataFrame
+2024-06-20 21:38:19,505 - root - INFO - Data transformed successfully
+2024-06-20 21:38:19,512 - root - INFO - Data saved to csv successfully
+2024-06-20 21:38:34,068 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.fiscaldata.treasury.gov:443
+2024-06-20 21:38:36,329 - urllib3.connectionpool - DEBUG - https://api.fiscaldata.treasury.gov:443 "GET /services/api/fiscal_service/v2/accounting/od/debt_outstanding?fields=record_fiscal_year,%20debt_outstanding_amt&sort=-record_fiscal_year&format=json&page%5Bnumber%5D=1&page%5Bsize%5D=235 HTTP/1.1" 200 4289
+2024-06-20 21:38:36,332 - root - INFO - Data extracted successfully
+2024-06-20 21:38:36,339 - root - INFO - President column added to DataFrame
+2024-06-20 21:38:36,390 - root - INFO - Data transformed successfully
+2024-06-20 21:38:36,393 - root - INFO - Data saved to csv successfully
+2024-06-20 21:41:29,262 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.fiscaldata.treasury.gov:443
+2024-06-20 21:41:29,822 - urllib3.connectionpool - DEBUG - https://api.fiscaldata.treasury.gov:443 "GET /services/api/fiscal_service/v2/accounting/od/debt_outstanding?fields=record_fiscal_year,%20debt_outstanding_amt&sort=-record_fiscal_year&format=json&page%5Bnumber%5D=1&page%5Bsize%5D=235 HTTP/1.1" 200 4289
+2024-06-20 21:41:29,824 - root - INFO - Data extracted successfully
+2024-06-20 21:41:29,830 - root - INFO - President column added to DataFrame
+2024-06-20 21:41:29,866 - root - INFO - Data transformed successfully
+2024-06-20 21:41:29,869 - root - INFO - Data saved to csv successfully
+2024-06-20 21:41:52,912 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.fiscaldata.treasury.gov:443
+2024-06-20 21:41:53,165 - urllib3.connectionpool - DEBUG - https://api.fiscaldata.treasury.gov:443 "GET /services/api/fiscal_service/v2/accounting/od/debt_outstanding?fields=record_fiscal_year,%20debt_outstanding_amt&sort=-record_fiscal_year&format=json&page%5Bnumber%5D=1&page%5Bsize%5D=235 HTTP/1.1" 200 4289
+2024-06-20 21:41:53,196 - root - INFO - Data extracted successfully
+2024-06-20 21:41:53,230 - root - INFO - President column added to DataFrame
+2024-06-20 21:41:53,267 - root - INFO - Data transformed successfully
+2024-06-20 21:41:53,277 - root - INFO - Data saved to csv successfully
+2024-06-20 21:42:20,686 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.fiscaldata.treasury.gov:443
+2024-06-20 21:42:21,327 - urllib3.connectionpool - DEBUG - https://api.fiscaldata.treasury.gov:443 "GET /services/api/fiscal_service/v2/accounting/od/debt_outstanding?fields=record_fiscal_year,%20debt_outstanding_amt&sort=-record_fiscal_year&format=json&page%5Bnumber%5D=1&page%5Bsize%5D=235 HTTP/1.1" 200 4289
+2024-06-20 21:42:21,330 - root - INFO - Data extracted successfully
+2024-06-20 21:42:21,357 - root - INFO - President column added to DataFrame
+2024-06-20 21:42:21,368 - root - INFO - Data transformed successfully
+2024-06-20 21:42:21,373 - root - INFO - Data saved to csv successfully
+2024-06-20 21:43:19,169 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.fiscaldata.treasury.gov:443
+2024-06-20 21:43:20,038 - urllib3.connectionpool - DEBUG - https://api.fiscaldata.treasury.gov:443 "GET /services/api/fiscal_service/v2/accounting/od/debt_outstanding?fields=record_fiscal_year,%20debt_outstanding_amt&sort=-record_fiscal_year&format=json&page%5Bnumber%5D=1&page%5Bsize%5D=235 HTTP/1.1" 200 4289
+2024-06-20 21:43:20,040 - root - INFO - Data extracted successfully
+2024-06-20 21:43:20,048 - root - INFO - President column added to DataFrame
+2024-06-20 21:43:20,075 - root - INFO - Data transformed successfully
+2024-06-20 21:43:20,079 - root - INFO - Data saved to csv successfully
+2024-06-20 21:43:38,615 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.fiscaldata.treasury.gov:443
+2024-06-20 21:43:39,067 - urllib3.connectionpool - DEBUG - https://api.fiscaldata.treasury.gov:443 "GET /services/api/fiscal_service/v2/accounting/od/debt_outstanding?fields=record_fiscal_year,%20debt_outstanding_amt&sort=-record_fiscal_year&format=json&page%5Bnumber%5D=1&page%5Bsize%5D=235 HTTP/1.1" 200 4289
+2024-06-20 21:43:39,070 - root - INFO - Data extracted successfully
+2024-06-20 21:43:39,082 - root - INFO - President column added to DataFrame
+2024-06-20 21:43:39,099 - root - INFO - Data transformed successfully
+2024-06-20 21:43:39,101 - root - INFO - Data saved to csv successfully
+2024-06-20 21:44:31,408 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.fiscaldata.treasury.gov:443
+2024-06-20 21:44:36,590 - urllib3.connectionpool - DEBUG - https://api.fiscaldata.treasury.gov:443 "GET /services/api/fiscal_service/v2/accounting/od/debt_outstanding?fields=record_fiscal_year,%20debt_outstanding_amt&sort=-record_fiscal_year&format=json&page%5Bnumber%5D=1&page%5Bsize%5D=235 HTTP/1.1" 200 4289
+2024-06-20 21:44:36,594 - root - INFO - Data extracted successfully
+2024-06-20 21:44:36,602 - root - INFO - President column added to DataFrame
+2024-06-20 21:44:36,631 - root - INFO - Data transformed successfully
+2024-06-20 21:44:36,637 - root - INFO - Data saved to csv successfully
+2024-06-20 21:44:47,393 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.fiscaldata.treasury.gov:443
+2024-06-20 21:44:47,759 - urllib3.connectionpool - DEBUG - https://api.fiscaldata.treasury.gov:443 "GET /services/api/fiscal_service/v2/accounting/od/debt_outstanding?fields=record_fiscal_year,%20debt_outstanding_amt&sort=-record_fiscal_year&format=json&page%5Bnumber%5D=1&page%5Bsize%5D=235 HTTP/1.1" 200 4289
+2024-06-20 21:44:47,763 - root - INFO - Data extracted successfully
+2024-06-20 21:44:47,769 - root - INFO - President column added to DataFrame
+2024-06-20 21:44:47,796 - root - INFO - Data transformed successfully
+2024-06-20 21:44:47,799 - root - INFO - Data saved to csv successfully
