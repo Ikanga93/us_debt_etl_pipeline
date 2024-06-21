@@ -133,7 +133,17 @@ def transform_task(data):
         # data['debt_added'] = data.groupby('president')['debt_outstanding_trillions'].diff().fillna(0)
         # Geting the total debt added by each president
         # data['total_debt_added'] = data.groupby('president')['debt_added'].cumsum()
-        # 
+        # Create a new column to show the change in debt in percentage form for each president using lambda function
+        # data['debt_change_percentage'] = data.groupby('president')['debt_outstanding_amt'].pct_change().fillna(0)
+        # Need to have only one name for each president
+        data['president'] = data['president'].drop_duplicates()
+        # data['debt_change_percentage'] = data.groupby('president')['debt_change_percentage'].transform(lambda x: x.fillna(x.mean()))
+        # Want to show all data
+        pd.set_option('display.max_rows', None)
+        pd.set_option('display.max_columns', None)
+        pd.set_option('display.width', None)
+        pd.set_option('display.max_colwidth', None)
+        # Reset the index
     
 
         logging.info('Data transformed successfully')
