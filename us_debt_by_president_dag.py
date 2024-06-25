@@ -7,10 +7,11 @@ import logging.handlers
 import requests
 import pendulum
 import pandas as pd
+import psycopg2
+from sqlalchemy import create_engine, text
 import matplotlib.pyplot as plt
 import numpy as np
 import csv
-from io import StringIO
 from datetime import timedelta
 
 # Add the directory containing my modules to the python path
@@ -149,7 +150,7 @@ def transform_task(data):
         # Add all duplicated president names in one, add their debts in one row, and combine the years in one row as a range
         #data = data.groupby('president').agg({'record_fiscal_year': lambda x: f'{x.min()} - {x.max()}', 'debt_outstanding_amt': 'sum'}).reset_index()
         # Sort the data by record_fiscal_year in ascending order
-        data = data.sort_values('record_fiscal_year', ascending=True, ignore_index=True)
+        # data = data.sort_values('record_fiscal_year', ascending=True, ignore_index=True)
         # Calculate the debt added by each president on top of the previous year per president
         # Create a new column that calculate the increase per year for each persident compare to the previous year and 
         # add a dollar sign to it and still keep it as an integer
@@ -157,42 +158,37 @@ def transform_task(data):
 
 
         # Create a new column that calculate the increase per year for each persident compare to the previous year. Add a dollar sign to the new column and still keep it as an integer
-        data['debt_added'] = data.groupby('president')['debt_outstanding_amt'].diff().fillna(0)
+        # data['debt_added'] = data.groupby('president')['debt_outstanding_amt'].diff().fillna(0)
         # Add the dollar sign to the debt_added column and still keep it as an integer
         # data['debt_added'] = data['debt_added'].apply(lambda x: f'${int(x):,}' if x > 0 else f'-${int(x):,}')
 
-        # Add all duplicated president names in one, add their debts in one row, and combine the years in one row as a range
-        #data = data.groupby('president').agg({'record_fiscal_year': lambda x: f'{x.min()} - {x.max()}', 'debt_outstanding_amt': 'sum'}).reset_index()
+        # Add all duplicated president names in one, add their debts in one row as a range and a whole number with a dollar sign, and combine the years in one row as a range
+        # data = data.groupby('president').agg({'record_fiscal_year': lambda x: f'{x.min()} - {x.max()}'}).reset_index()
+        # Add a dollar sign to the debt_outstanding_amt column and still keep it as integer
+
         # Add all duplicated president names in one, add their debts in one row, combine the years in one row as a range and create a new column that calculate the increase per year for each persident compare to the previous year
-        data = data.groupby('president').agg({'record_fiscal_year': lambda x: f'{x.min()} - {x.max()}', 'debt_outstanding_amt': 'sum', 'debt_added': 'sum'}).reset_index()
+        # data = data.groupby('president').agg({'record_fiscal_year': lambda x: f'{x.min()} - {x.max()}', 'debt_outstanding_amt': 'sum', 'debt_added': 'sum'}).reset_index()
+        # Add a new coclumn that combine in range the total_debt per president
+        # data['debt_outstanding_amt'] = data['debt_outstanding_amt'].apply(lambda x: f'${int(x):,}')
         # Sort the data by record_fiscal_year in ascending order
         data = data.sort_values('record_fiscal_year', ascending=True, ignore_index=True)
         # Show the debt_added column in whole numbers and add the dollar sign to it and still keep it as an integer and the negative sign if the debt is reduced should be before the dollar sign
         # data['debt_added'] = data['debt_added'].apply(lambda x: f'${int(x):,}' if x > 0 else f'-${int(x):,}')
         # Show the debt_outstanding_amt column in whole numbers and add the dollar sign to it and still keep it as an integer
-        data['debt_outstanding_amt'] = data['debt_outstanding_amt'].apply(lambda x: f'${int(x):,}')
+        # data['debt_outstanding_amt'] = data['debt_outstanding_amt'].apply(lambda x: f'${int(x):,}')
         # Show the debt_added column in whole numbers
-        data['debt_added'] = data['debt_added'].apply(lambda x: f'{int(x):,}')
+        # data['debt_added'] = data['debt_added'].apply(lambda x: f'{int(x):,}')
         # Change the column names of the debt_added and debt_outstanding_amt columns
         data = data.rename(columns={'debt_outstanding_amt': 'total_debt', 'debt_added': 'debt_added_per_president'})
         # Change the column of fiscal year to years_in_office and president to president_name
         data = data.rename(columns={'record_fiscal_year': 'period_in_office', 'president': 'president_name'})
         # Add a new column to show the number of years each president spent in office
         # data['years_in_office'] = data['period_in_office'].apply(lambda x: int(x.split('-')[1]) - int(x.split('-')[0]) + 1)
+     
         # Remove the total_debt column
-        data = data.drop(columns='total_debt')
-        data_io = StringIO(data)
-        # Read the CSV file
-        reader = csv.reader(data_io)
-        headers = next(reader)
-
-        # Prepare the output list with the modified data
-        output = [headers]
-
-        # Process each row and add the dollar sign to the third column
-        for row in reader:
-            row[2] = f"${row[2]}"
-            output.append(row)
+        # data = data.drop(columns='total_debt')
+        # Add a new coclumn that combine in range the total_debt per president
+        # data['total_debt'] = data['total_debt'].apply(lambda x: f'${int(x):,}')
 
         logging.info('Data transformed successfully')
         return data
@@ -216,3 +212,54 @@ def load_task(df, csv_file):
 
 # Call the load_task function
 print(load_task(cleaned_df, us_debt_csv))
+
+
+# Loading data to postgresql database
+def load_to_postgres_task(csv_file):
+        # Connect to the database
+        db_params = {
+            'host': 'localhost',
+            'database': 'us_debt',
+            'user': 'postgres',
+            'password': 'D2racine4ac#',
+            'port': '5432'
+        }
+        # Connect to the database
+        conn = psycopg2.connect(**db_params)
+        cur = conn.cursor()
+
+        # Create the table
+        '''
+        cur.execute("""
+            CREATE TABLE us_debt_01 (
+                    period_in_office INT,
+                    total_debt numeric,
+                    president_name NAME 
+            );
+        """)
+        '''
+
+        # load the data from the csv file to the table
+        with open(csv_file, 'r') as f:
+            reader = csv.reader(f)
+            next(reader)
+            for row in reader:
+                cur.execute(
+                    "INSERT INTO us_debt_01 (period_in_office, total_debt, president_name) VALUES (%s, %s, %s)",
+                    row
+                )
+            # cur.copy_from(f, 'us_debt_01', sep=',')
+
+
+        # Commit the transaction
+        conn.commit()
+
+        # Close the connection
+        cur.close()
+        conn.close()
+
+        logging.info('Data loaded to postgres successfully')
+
+# Call the load_to_postgres function
+load_to_postgres_task(us_debt_csv)
+

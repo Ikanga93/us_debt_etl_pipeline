@@ -922,3 +922,190 @@ NameError: name 'pendulum' is not defined
 2024-06-21 03:16:55,900 - root - INFO - President column added to DataFrame
 2024-06-21 03:16:56,022 - root - ERROR - Error transforming data: initial_value must be str or None, not DataFrame
 2024-06-21 03:16:56,027 - root - ERROR - Error saving data to csv: 'NoneType' object has no attribute 'to_csv'
+2024-06-21 13:18:36,024 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.fiscaldata.treasury.gov:443
+2024-06-21 13:18:36,552 - urllib3.connectionpool - DEBUG - https://api.fiscaldata.treasury.gov:443 "GET /services/api/fiscal_service/v2/accounting/od/debt_outstanding?fields=record_fiscal_year,%20debt_outstanding_amt&sort=-record_fiscal_year&format=json&page%5Bnumber%5D=1&page%5Bsize%5D=235 HTTP/1.1" 200 4289
+2024-06-21 13:18:36,569 - root - INFO - Data extracted successfully
+2024-06-21 13:18:36,592 - root - INFO - President column added to DataFrame
+2024-06-21 13:18:36,629 - root - ERROR - Error transforming data: initial_value must be str or None, not DataFrame
+2024-06-21 13:18:36,630 - root - ERROR - Error saving data to csv: 'NoneType' object has no attribute 'to_csv'
+2024-06-21 13:19:17,311 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.fiscaldata.treasury.gov:443
+2024-06-21 13:19:17,890 - urllib3.connectionpool - DEBUG - https://api.fiscaldata.treasury.gov:443 "GET /services/api/fiscal_service/v2/accounting/od/debt_outstanding?fields=record_fiscal_year,%20debt_outstanding_amt&sort=-record_fiscal_year&format=json&page%5Bnumber%5D=1&page%5Bsize%5D=235 HTTP/1.1" 200 4289
+2024-06-21 13:19:17,902 - root - INFO - Data extracted successfully
+2024-06-21 13:19:17,928 - root - INFO - President column added to DataFrame
+2024-06-21 13:19:17,987 - root - INFO - Data transformed successfully
+2024-06-21 13:19:17,997 - root - INFO - Data saved to csv successfully
+2024-06-21 13:21:22,002 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.fiscaldata.treasury.gov:443
+2024-06-21 13:21:22,544 - urllib3.connectionpool - DEBUG - https://api.fiscaldata.treasury.gov:443 "GET /services/api/fiscal_service/v2/accounting/od/debt_outstanding?fields=record_fiscal_year,%20debt_outstanding_amt&sort=-record_fiscal_year&format=json&page%5Bnumber%5D=1&page%5Bsize%5D=235 HTTP/1.1" 200 4289
+2024-06-21 13:21:22,550 - root - INFO - Data extracted successfully
+2024-06-21 13:21:22,563 - root - INFO - President column added to DataFrame
+2024-06-21 13:21:22,645 - root - ERROR - Error transforming data: invalid literal for int() with base 10: '$547,047,707'
+2024-06-21 13:21:22,648 - root - ERROR - Error saving data to csv: 'NoneType' object has no attribute 'to_csv'
+2024-06-21 13:23:52,705 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.fiscaldata.treasury.gov:443
+2024-06-21 13:23:53,232 - urllib3.connectionpool - DEBUG - https://api.fiscaldata.treasury.gov:443 "GET /services/api/fiscal_service/v2/accounting/od/debt_outstanding?fields=record_fiscal_year,%20debt_outstanding_amt&sort=-record_fiscal_year&format=json&page%5Bnumber%5D=1&page%5Bsize%5D=235 HTTP/1.1" 200 4289
+2024-06-21 13:23:53,244 - root - INFO - Data extracted successfully
+2024-06-21 13:23:53,265 - root - INFO - President column added to DataFrame
+2024-06-21 13:23:53,323 - root - ERROR - Error transforming data: 'debt_outstanding_amt'
+2024-06-21 13:23:53,323 - root - ERROR - Error saving data to csv: 'NoneType' object has no attribute 'to_csv'
+2024-06-21 13:25:03,796 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.fiscaldata.treasury.gov:443
+2024-06-21 13:25:04,356 - urllib3.connectionpool - DEBUG - https://api.fiscaldata.treasury.gov:443 "GET /services/api/fiscal_service/v2/accounting/od/debt_outstanding?fields=record_fiscal_year,%20debt_outstanding_amt&sort=-record_fiscal_year&format=json&page%5Bnumber%5D=1&page%5Bsize%5D=235 HTTP/1.1" 200 4289
+2024-06-21 13:25:04,373 - root - INFO - Data extracted successfully
+2024-06-21 13:25:04,386 - root - INFO - President column added to DataFrame
+2024-06-21 13:25:04,407 - root - INFO - Data transformed successfully
+2024-06-21 13:25:04,442 - root - INFO - Data saved to csv successfully
+2024-06-21 13:25:39,909 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.fiscaldata.treasury.gov:443
+2024-06-21 13:25:40,506 - urllib3.connectionpool - DEBUG - https://api.fiscaldata.treasury.gov:443 "GET /services/api/fiscal_service/v2/accounting/od/debt_outstanding?fields=record_fiscal_year,%20debt_outstanding_amt&sort=-record_fiscal_year&format=json&page%5Bnumber%5D=1&page%5Bsize%5D=235 HTTP/1.1" 200 4289
+2024-06-21 13:25:40,510 - root - INFO - Data extracted successfully
+2024-06-21 13:25:40,526 - root - INFO - President column added to DataFrame
+2024-06-21 13:25:40,574 - root - ERROR - Error transforming data: 'total_debt'
+2024-06-21 13:25:40,574 - root - ERROR - Error saving data to csv: 'NoneType' object has no attribute 'to_csv'
+2024-06-21 13:25:55,224 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.fiscaldata.treasury.gov:443
+2024-06-21 13:25:55,674 - urllib3.connectionpool - DEBUG - https://api.fiscaldata.treasury.gov:443 "GET /services/api/fiscal_service/v2/accounting/od/debt_outstanding?fields=record_fiscal_year,%20debt_outstanding_amt&sort=-record_fiscal_year&format=json&page%5Bnumber%5D=1&page%5Bsize%5D=235 HTTP/1.1" 200 4289
+2024-06-21 13:25:55,677 - root - INFO - Data extracted successfully
+2024-06-21 13:25:55,682 - root - INFO - President column added to DataFrame
+2024-06-21 13:25:55,720 - root - ERROR - Error transforming data: invalid literal for int() with base 10: '$547,047,707'
+2024-06-21 13:25:55,720 - root - ERROR - Error saving data to csv: 'NoneType' object has no attribute 'to_csv'
+2024-06-21 13:26:08,021 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.fiscaldata.treasury.gov:443
+2024-06-21 13:26:08,539 - urllib3.connectionpool - DEBUG - https://api.fiscaldata.treasury.gov:443 "GET /services/api/fiscal_service/v2/accounting/od/debt_outstanding?fields=record_fiscal_year,%20debt_outstanding_amt&sort=-record_fiscal_year&format=json&page%5Bnumber%5D=1&page%5Bsize%5D=235 HTTP/1.1" 200 4289
+2024-06-21 13:26:08,542 - root - INFO - Data extracted successfully
+2024-06-21 13:26:08,547 - root - INFO - President column added to DataFrame
+2024-06-21 13:26:08,574 - root - ERROR - Error transforming data: invalid literal for int() with base 10: '547,047,707'
+2024-06-21 13:26:08,575 - root - ERROR - Error saving data to csv: 'NoneType' object has no attribute 'to_csv'
+2024-06-21 13:32:00,925 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.fiscaldata.treasury.gov:443
+2024-06-21 13:32:01,424 - urllib3.connectionpool - DEBUG - https://api.fiscaldata.treasury.gov:443 "GET /services/api/fiscal_service/v2/accounting/od/debt_outstanding?fields=record_fiscal_year,%20debt_outstanding_amt&sort=-record_fiscal_year&format=json&page%5Bnumber%5D=1&page%5Bsize%5D=235 HTTP/1.1" 200 4289
+2024-06-21 13:32:01,431 - root - INFO - Data extracted successfully
+2024-06-21 13:32:01,463 - root - INFO - President column added to DataFrame
+2024-06-21 13:32:01,548 - root - ERROR - Error transforming data: invalid literal for int() with base 10: '90580873.72 - 1815784370.57'
+2024-06-21 13:32:01,549 - root - ERROR - Error saving data to csv: 'NoneType' object has no attribute 'to_csv'
+2024-06-21 13:35:45,209 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.fiscaldata.treasury.gov:443
+2024-06-21 13:35:45,733 - urllib3.connectionpool - DEBUG - https://api.fiscaldata.treasury.gov:443 "GET /services/api/fiscal_service/v2/accounting/od/debt_outstanding?fields=record_fiscal_year,%20debt_outstanding_amt&sort=-record_fiscal_year&format=json&page%5Bnumber%5D=1&page%5Bsize%5D=235 HTTP/1.1" 200 4289
+2024-06-21 13:35:45,736 - root - INFO - Data extracted successfully
+2024-06-21 13:35:45,744 - root - INFO - President column added to DataFrame
+2024-06-21 13:35:45,789 - root - ERROR - Error transforming data: invalid literal for int() with base 10: '90580873.72 - 1815784370.57'
+2024-06-21 13:35:45,790 - root - ERROR - Error saving data to csv: 'NoneType' object has no attribute 'to_csv'
+2024-06-21 13:36:32,906 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.fiscaldata.treasury.gov:443
+2024-06-21 13:36:33,477 - urllib3.connectionpool - DEBUG - https://api.fiscaldata.treasury.gov:443 "GET /services/api/fiscal_service/v2/accounting/od/debt_outstanding?fields=record_fiscal_year,%20debt_outstanding_amt&sort=-record_fiscal_year&format=json&page%5Bnumber%5D=1&page%5Bsize%5D=235 HTTP/1.1" 200 4289
+2024-06-21 13:36:33,479 - root - INFO - Data extracted successfully
+2024-06-21 13:36:33,483 - root - INFO - President column added to DataFrame
+2024-06-21 13:36:33,515 - root - ERROR - Error transforming data: invalid literal for int() with base 10: '90580873.72 - 1815784370.57'
+2024-06-21 13:36:33,515 - root - ERROR - Error saving data to csv: 'NoneType' object has no attribute 'to_csv'
+2024-06-21 13:39:01,796 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.fiscaldata.treasury.gov:443
+2024-06-21 13:39:01,799 - root - ERROR - Error extracting data: HTTPSConnectionPool(host='api.fiscaldata.treasury.gov', port=443): Max retries exceeded with url: /services/api/fiscal_service/v2/accounting/od/debt_outstanding?fields=record_fiscal_year,%20debt_outstanding_amt&sort=-record_fiscal_year&format=json&page%5Bnumber%5D=1&page%5Bsize%5D=235 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x11f155760>: Failed to resolve 'api.fiscaldata.treasury.gov' ([Errno 8] nodename nor servname provided, or not known)"))
+2024-06-21 13:39:01,799 - root - ERROR - Could not add president column to DataFrame
+2024-06-21 13:39:01,799 - root - ERROR - Error transforming data: 'NoneType' object is not subscriptable
+2024-06-21 13:39:01,799 - root - ERROR - Error saving data to csv: 'NoneType' object has no attribute 'to_csv'
+2024-06-21 13:39:24,522 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.fiscaldata.treasury.gov:443
+2024-06-21 13:39:24,524 - root - ERROR - Error extracting data: HTTPSConnectionPool(host='api.fiscaldata.treasury.gov', port=443): Max retries exceeded with url: /services/api/fiscal_service/v2/accounting/od/debt_outstanding?fields=record_fiscal_year,%20debt_outstanding_amt&sort=-record_fiscal_year&format=json&page%5Bnumber%5D=1&page%5Bsize%5D=235 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x11bf1a390>: Failed to resolve 'api.fiscaldata.treasury.gov' ([Errno 8] nodename nor servname provided, or not known)"))
+2024-06-21 13:39:24,525 - root - ERROR - Could not add president column to DataFrame
+2024-06-21 13:39:24,525 - root - ERROR - Error transforming data: 'NoneType' object is not subscriptable
+2024-06-21 13:39:24,525 - root - ERROR - Error saving data to csv: 'NoneType' object has no attribute 'to_csv'
+2024-06-21 13:39:45,266 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.fiscaldata.treasury.gov:443
+2024-06-21 13:39:45,268 - root - ERROR - Error extracting data: HTTPSConnectionPool(host='api.fiscaldata.treasury.gov', port=443): Max retries exceeded with url: /services/api/fiscal_service/v2/accounting/od/debt_outstanding?fields=record_fiscal_year,%20debt_outstanding_amt&sort=-record_fiscal_year&format=json&page%5Bnumber%5D=1&page%5Bsize%5D=235 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x1167adf10>: Failed to resolve 'api.fiscaldata.treasury.gov' ([Errno 8] nodename nor servname provided, or not known)"))
+2024-06-21 13:39:45,269 - root - ERROR - Could not add president column to DataFrame
+2024-06-21 13:39:45,269 - root - ERROR - Error transforming data: 'NoneType' object is not subscriptable
+2024-06-21 13:39:45,269 - root - ERROR - Error saving data to csv: 'NoneType' object has no attribute 'to_csv'
+2024-06-21 13:40:11,727 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.fiscaldata.treasury.gov:443
+2024-06-21 13:40:11,728 - root - ERROR - Error extracting data: HTTPSConnectionPool(host='api.fiscaldata.treasury.gov', port=443): Max retries exceeded with url: /services/api/fiscal_service/v2/accounting/od/debt_outstanding?fields=record_fiscal_year,%20debt_outstanding_amt&sort=-record_fiscal_year&format=json&page%5Bnumber%5D=1&page%5Bsize%5D=235 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x119ecbbf0>: Failed to resolve 'api.fiscaldata.treasury.gov' ([Errno 8] nodename nor servname provided, or not known)"))
+2024-06-21 13:40:11,728 - root - ERROR - Could not add president column to DataFrame
+2024-06-21 13:40:11,729 - root - ERROR - Error transforming data: 'NoneType' object is not subscriptable
+2024-06-21 13:40:11,729 - root - ERROR - Error saving data to csv: 'NoneType' object has no attribute 'to_csv'
+2024-06-21 13:40:45,285 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.fiscaldata.treasury.gov:443
+2024-06-21 13:40:45,287 - root - ERROR - Error extracting data: HTTPSConnectionPool(host='api.fiscaldata.treasury.gov', port=443): Max retries exceeded with url: /services/api/fiscal_service/v2/accounting/od/debt_outstanding?fields=record_fiscal_year,%20debt_outstanding_amt&sort=-record_fiscal_year&format=json&page%5Bnumber%5D=1&page%5Bsize%5D=235 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x11d1ced80>: Failed to resolve 'api.fiscaldata.treasury.gov' ([Errno 8] nodename nor servname provided, or not known)"))
+2024-06-21 13:40:45,287 - root - ERROR - Could not add president column to DataFrame
+2024-06-21 13:40:45,287 - root - ERROR - Error transforming data: 'NoneType' object is not subscriptable
+2024-06-21 13:40:45,287 - root - ERROR - Error saving data to csv: 'NoneType' object has no attribute 'to_csv'
+2024-06-21 13:41:45,898 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.fiscaldata.treasury.gov:443
+2024-06-21 13:41:45,900 - root - ERROR - Error extracting data: HTTPSConnectionPool(host='api.fiscaldata.treasury.gov', port=443): Max retries exceeded with url: /services/api/fiscal_service/v2/accounting/od/debt_outstanding?fields=record_fiscal_year,%20debt_outstanding_amt&sort=-record_fiscal_year&format=json&page%5Bnumber%5D=1&page%5Bsize%5D=235 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x1165ee030>: Failed to resolve 'api.fiscaldata.treasury.gov' ([Errno 8] nodename nor servname provided, or not known)"))
+2024-06-21 13:41:45,900 - root - ERROR - Could not add president column to DataFrame
+2024-06-21 13:41:45,900 - root - ERROR - Error transforming data: 'NoneType' object is not subscriptable
+2024-06-21 13:41:45,901 - root - ERROR - Error saving data to csv: 'NoneType' object has no attribute 'to_csv'
+2024-06-21 13:43:48,955 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.fiscaldata.treasury.gov:443
+2024-06-21 13:43:49,998 - urllib3.connectionpool - DEBUG - https://api.fiscaldata.treasury.gov:443 "GET /services/api/fiscal_service/v2/accounting/od/debt_outstanding?fields=record_fiscal_year,%20debt_outstanding_amt&sort=-record_fiscal_year&format=json&page%5Bnumber%5D=1&page%5Bsize%5D=235 HTTP/1.1" 200 4289
+2024-06-21 13:43:50,003 - root - INFO - Data extracted successfully
+2024-06-21 13:43:50,024 - root - INFO - President column added to DataFrame
+2024-06-21 13:43:50,030 - root - INFO - Data transformed successfully
+2024-06-21 13:43:50,036 - root - INFO - Data saved to csv successfully
+2024-06-21 13:45:44,507 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.fiscaldata.treasury.gov:443
+2024-06-21 13:45:45,079 - urllib3.connectionpool - DEBUG - https://api.fiscaldata.treasury.gov:443 "GET /services/api/fiscal_service/v2/accounting/od/debt_outstanding?fields=record_fiscal_year,%20debt_outstanding_amt&sort=-record_fiscal_year&format=json&page%5Bnumber%5D=1&page%5Bsize%5D=235 HTTP/1.1" 200 4289
+2024-06-21 13:45:45,082 - root - INFO - Data extracted successfully
+2024-06-21 13:45:45,094 - root - INFO - President column added to DataFrame
+2024-06-21 13:45:45,138 - root - INFO - Data transformed successfully
+2024-06-21 13:45:45,143 - root - INFO - Data saved to csv successfully
+2024-06-21 13:48:26,307 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.fiscaldata.treasury.gov:443
+2024-06-21 13:48:26,906 - urllib3.connectionpool - DEBUG - https://api.fiscaldata.treasury.gov:443 "GET /services/api/fiscal_service/v2/accounting/od/debt_outstanding?fields=record_fiscal_year,%20debt_outstanding_amt&sort=-record_fiscal_year&format=json&page%5Bnumber%5D=1&page%5Bsize%5D=235 HTTP/1.1" 200 4289
+2024-06-21 13:48:26,914 - root - INFO - Data extracted successfully
+2024-06-21 13:48:26,924 - root - INFO - President column added to DataFrame
+2024-06-21 13:48:27,057 - root - ERROR - Error transforming data: invalid literal for int() with base 10: '90580873.72 - 1815784370.57'
+2024-06-21 13:48:27,074 - root - ERROR - Error saving data to csv: 'NoneType' object has no attribute 'to_csv'
+2024-06-21 13:49:18,027 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.fiscaldata.treasury.gov:443
+2024-06-21 13:49:18,592 - urllib3.connectionpool - DEBUG - https://api.fiscaldata.treasury.gov:443 "GET /services/api/fiscal_service/v2/accounting/od/debt_outstanding?fields=record_fiscal_year,%20debt_outstanding_amt&sort=-record_fiscal_year&format=json&page%5Bnumber%5D=1&page%5Bsize%5D=235 HTTP/1.1" 200 4289
+2024-06-21 13:49:18,598 - root - INFO - Data extracted successfully
+2024-06-21 13:49:18,605 - root - INFO - President column added to DataFrame
+2024-06-21 13:49:18,649 - root - INFO - Data transformed successfully
+2024-06-21 13:49:18,652 - root - INFO - Data saved to csv successfully
+2024-06-21 13:52:28,762 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.fiscaldata.treasury.gov:443
+2024-06-21 13:52:29,426 - urllib3.connectionpool - DEBUG - https://api.fiscaldata.treasury.gov:443 "GET /services/api/fiscal_service/v2/accounting/od/debt_outstanding?fields=record_fiscal_year,%20debt_outstanding_amt&sort=-record_fiscal_year&format=json&page%5Bnumber%5D=1&page%5Bsize%5D=235 HTTP/1.1" 200 4289
+2024-06-21 13:52:29,431 - root - INFO - Data extracted successfully
+2024-06-21 13:52:29,446 - root - INFO - President column added to DataFrame
+2024-06-21 13:52:29,491 - root - INFO - Data transformed successfully
+2024-06-21 13:52:29,494 - root - INFO - Data saved to csv successfully
+2024-06-21 13:52:46,377 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.fiscaldata.treasury.gov:443
+2024-06-21 13:52:47,712 - urllib3.connectionpool - DEBUG - https://api.fiscaldata.treasury.gov:443 "GET /services/api/fiscal_service/v2/accounting/od/debt_outstanding?fields=record_fiscal_year,%20debt_outstanding_amt&sort=-record_fiscal_year&format=json&page%5Bnumber%5D=1&page%5Bsize%5D=235 HTTP/1.1" 200 4289
+2024-06-21 13:52:47,724 - root - INFO - Data extracted successfully
+2024-06-21 13:52:47,754 - root - INFO - President column added to DataFrame
+2024-06-21 13:52:47,770 - root - INFO - Data transformed successfully
+2024-06-21 13:52:47,789 - root - INFO - Data saved to csv successfully
+2024-06-21 14:15:09,112 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.fiscaldata.treasury.gov:443
+2024-06-21 14:15:09,115 - root - ERROR - Error extracting data: HTTPSConnectionPool(host='api.fiscaldata.treasury.gov', port=443): Max retries exceeded with url: /services/api/fiscal_service/v2/accounting/od/debt_outstanding?fields=record_fiscal_year,%20debt_outstanding_amt&sort=-record_fiscal_year&format=json&page%5Bnumber%5D=1&page%5Bsize%5D=235 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x118e789b0>: Failed to resolve 'api.fiscaldata.treasury.gov' ([Errno 8] nodename nor servname provided, or not known)"))
+2024-06-21 14:15:09,115 - root - ERROR - Could not add president column to DataFrame
+2024-06-21 14:15:09,115 - root - ERROR - Error transforming data: 'NoneType' object is not subscriptable
+2024-06-21 14:15:09,116 - root - ERROR - Error saving data to csv: 'NoneType' object has no attribute 'to_csv'
+2024-06-21 14:16:50,704 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.fiscaldata.treasury.gov:443
+2024-06-21 14:16:51,233 - urllib3.connectionpool - DEBUG - https://api.fiscaldata.treasury.gov:443 "GET /services/api/fiscal_service/v2/accounting/od/debt_outstanding?fields=record_fiscal_year,%20debt_outstanding_amt&sort=-record_fiscal_year&format=json&page%5Bnumber%5D=1&page%5Bsize%5D=235 HTTP/1.1" 200 4289
+2024-06-21 14:16:51,238 - root - INFO - Data extracted successfully
+2024-06-21 14:16:51,246 - root - INFO - President column added to DataFrame
+2024-06-21 14:16:51,261 - root - INFO - Data transformed successfully
+2024-06-21 14:16:51,265 - root - INFO - Data saved to csv successfully
+2024-06-21 14:30:41,598 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.fiscaldata.treasury.gov:443
+2024-06-21 14:30:42,104 - urllib3.connectionpool - DEBUG - https://api.fiscaldata.treasury.gov:443 "GET /services/api/fiscal_service/v2/accounting/od/debt_outstanding?fields=record_fiscal_year,%20debt_outstanding_amt&sort=-record_fiscal_year&format=json&page%5Bnumber%5D=1&page%5Bsize%5D=235 HTTP/1.1" 200 4289
+2024-06-21 14:30:42,122 - root - INFO - Data extracted successfully
+2024-06-21 14:30:42,144 - root - INFO - President column added to DataFrame
+2024-06-21 14:30:42,178 - root - INFO - Data transformed successfully
+2024-06-21 14:30:42,192 - root - INFO - Data saved to csv successfully
+2024-06-21 14:31:28,411 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.fiscaldata.treasury.gov:443
+2024-06-21 14:31:28,889 - urllib3.connectionpool - DEBUG - https://api.fiscaldata.treasury.gov:443 "GET /services/api/fiscal_service/v2/accounting/od/debt_outstanding?fields=record_fiscal_year,%20debt_outstanding_amt&sort=-record_fiscal_year&format=json&page%5Bnumber%5D=1&page%5Bsize%5D=235 HTTP/1.1" 200 4289
+2024-06-21 14:31:28,894 - root - INFO - Data extracted successfully
+2024-06-21 14:31:28,915 - root - INFO - President column added to DataFrame
+2024-06-21 14:31:28,919 - root - INFO - Data transformed successfully
+2024-06-21 14:31:28,952 - root - INFO - Data saved to csv successfully
+2024-06-21 14:33:20,373 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.fiscaldata.treasury.gov:443
+2024-06-21 14:33:21,042 - urllib3.connectionpool - DEBUG - https://api.fiscaldata.treasury.gov:443 "GET /services/api/fiscal_service/v2/accounting/od/debt_outstanding?fields=record_fiscal_year,%20debt_outstanding_amt&sort=-record_fiscal_year&format=json&page%5Bnumber%5D=1&page%5Bsize%5D=235 HTTP/1.1" 200 4289
+2024-06-21 14:33:21,056 - root - INFO - Data extracted successfully
+2024-06-21 14:33:21,100 - root - INFO - President column added to DataFrame
+2024-06-21 14:33:21,144 - root - INFO - Data transformed successfully
+2024-06-21 14:33:21,166 - root - INFO - Data saved to csv successfully
+2024-06-21 14:33:41,567 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.fiscaldata.treasury.gov:443
+2024-06-21 14:33:43,097 - urllib3.connectionpool - DEBUG - https://api.fiscaldata.treasury.gov:443 "GET /services/api/fiscal_service/v2/accounting/od/debt_outstanding?fields=record_fiscal_year,%20debt_outstanding_amt&sort=-record_fiscal_year&format=json&page%5Bnumber%5D=1&page%5Bsize%5D=235 HTTP/1.1" 200 4289
+2024-06-21 14:33:43,113 - root - INFO - Data extracted successfully
+2024-06-21 14:33:43,167 - root - INFO - President column added to DataFrame
+2024-06-21 14:33:43,208 - root - INFO - Data transformed successfully
+2024-06-21 14:33:43,228 - root - INFO - Data saved to csv successfully
+2024-06-21 14:52:13,038 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.fiscaldata.treasury.gov:443
+2024-06-21 14:52:13,565 - urllib3.connectionpool - DEBUG - https://api.fiscaldata.treasury.gov:443 "GET /services/api/fiscal_service/v2/accounting/od/debt_outstanding?fields=record_fiscal_year,%20debt_outstanding_amt&sort=-record_fiscal_year&format=json&page%5Bnumber%5D=1&page%5Bsize%5D=235 HTTP/1.1" 200 4289
+2024-06-21 14:52:13,570 - root - INFO - Data extracted successfully
+2024-06-21 14:52:13,581 - root - INFO - President column added to DataFrame
+2024-06-21 14:52:13,592 - root - INFO - Data transformed successfully
+2024-06-21 14:52:13,596 - root - INFO - Data saved to csv successfully
+2024-06-21 14:52:13,824 - root - INFO - Data loaded to postgres successfully
+2024-06-21 14:57:39,883 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.fiscaldata.treasury.gov:443
+2024-06-21 14:57:40,274 - urllib3.connectionpool - DEBUG - https://api.fiscaldata.treasury.gov:443 "GET /services/api/fiscal_service/v2/accounting/od/debt_outstanding?fields=record_fiscal_year,%20debt_outstanding_amt&sort=-record_fiscal_year&format=json&page%5Bnumber%5D=1&page%5Bsize%5D=235 HTTP/1.1" 200 4289
+2024-06-21 14:57:40,279 - root - INFO - Data extracted successfully
+2024-06-21 14:57:40,302 - root - INFO - President column added to DataFrame
+2024-06-21 14:57:40,307 - root - INFO - Data transformed successfully
+2024-06-21 14:57:40,329 - root - INFO - Data saved to csv successfully
+2024-06-21 14:58:20,969 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.fiscaldata.treasury.gov:443
+2024-06-21 14:58:21,238 - urllib3.connectionpool - DEBUG - https://api.fiscaldata.treasury.gov:443 "GET /services/api/fiscal_service/v2/accounting/od/debt_outstanding?fields=record_fiscal_year,%20debt_outstanding_amt&sort=-record_fiscal_year&format=json&page%5Bnumber%5D=1&page%5Bsize%5D=235 HTTP/1.1" 200 4289
+2024-06-21 14:58:21,240 - root - INFO - Data extracted successfully
+2024-06-21 14:58:21,250 - root - INFO - President column added to DataFrame
+2024-06-21 14:58:21,262 - root - INFO - Data transformed successfully
+2024-06-21 14:58:21,271 - root - INFO - Data saved to csv successfully
+2024-06-21 14:58:21,782 - root - INFO - Data loaded to postgres successfully
